@@ -1,0 +1,63 @@
+﻿@model Models.Installer
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>حذف</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>نصاب</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FullName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FullName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.InstallerUserName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.InstallerUserName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UserNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NationalCode)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NationalCode)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MobileNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MobileNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="حذف" class="btn btn-danger" /> |
+        <a class="btn btn-success" asp-action="Index">بازگشت</a>
+    </form>
+</div>

@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="LegalPerson.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LegalPerson.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LegalPerson.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LegalPerson.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="LegalPerson.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LegalPerson.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="NaturalPersons.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>NaturalPersons.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ShokatHeater.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ShokatHeater.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ReplacementHeater.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReplacementHeater.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Installer.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Installer.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Assistant\Buttons.Designer.cs" />
+    <Compile Remove="Assistant\ErrorMessages.Designer.cs" />
+    <Compile Remove="Assistant\DataDictionary.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="LegalPerson.Designer.cs">
+      <DependentUpon>LegalPerson.resx</DependentUpon>
+    </Compile>
+    <Compile Update="LegalPerson.Designer.cs">
+      <DependentUpon>LegalPerson.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="NaturalPersons.Designer.cs">
+      <DependentUpon>NaturalPersons.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="ShokatHeater.Designer.cs">
+      <DependentUpon>ShokatHeater.resx</DependentUpon>
+    </Compile>
+    <Compile Update="ReplacementHeater.Designer.cs">
+      <DependentUpon>ReplacementHeater.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Installer.Designer.cs">
+      <DependentUpon>Installer.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Assistant\DataDictionary.Designer.cs">
+      <DependentUpon>DataDictionary.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Assistant\ErrorMessages.Designer.cs">
+      <DependentUpon>ErrorMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Assistant\Buttons.Designer.cs">
+      <DependentUpon>Buttons.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

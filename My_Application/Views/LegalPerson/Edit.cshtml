@@ -1,0 +1,116 @@
+﻿@model Models.LegalPerson
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>تغییرات</h1>
+
+<h4>LegalPerson</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="LegalPerson" asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="LegalPersonId" />
+            <div class="form-group">
+                <label asp-for="InstallerUserName" class="control-label"></label>
+                <select asp-for="InstallerUserName" class="form-control js-example-basic-single" asp-items="ViewBag.InstallerUserName"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompanyName" class="control-label"></label>
+                <input asp-for="CompanyName" class="form-control" />
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NameCEO" class="control-label"></label>
+                <input asp-for="NameCEO" class="form-control" />
+                <span asp-validation-for="NameCEO" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EmailAddress" class="control-label"></label>
+                <input asp-for="EmailAddress" class="form-control" />
+                <span asp-validation-for="EmailAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PhoneNumber" class="control-label"></label>
+                <input asp-for="PhoneNumber" class="form-control" />
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="City" class="control-label"></label>
+                <select asp-for="City" class="form-control js-example-basic-single" asp-items="ViewBag.Cities"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="State" class="control-label"></label>
+                <select asp-for="State" class="form-control js-example-basic-single" asp-items="ViewBag.States"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Region" class="control-label"></label>
+                <input asp-for="Region" class="form-control" />
+                <span asp-validation-for="Region" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NationalCode" class="control-label"></label>
+                <input asp-for="NationalCode" class="form-control" />
+                <span asp-validation-for="NationalCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegistrationNumber" class="control-label"></label>
+                <input asp-for="RegistrationNumber" class="form-control" />
+                <span asp-validation-for="RegistrationNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EconomicCode" class="control-label"></label>
+                <input asp-for="EconomicCode" class="form-control" />
+                <span asp-validation-for="EconomicCode" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RecipientName" class="control-label"></label>
+                <input asp-for="RecipientName" class="form-control" />
+                <span asp-validation-for="RecipientName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InstallationLocation" class="control-label"></label>
+                <input asp-for="InstallationLocation" class="form-control" />
+                <span asp-validation-for="InstallationLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GasometerType" class="control-label"></label>
+                <input asp-for="GasometerType" class="form-control" />
+                <span asp-validation-for="GasometerType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GasometerNumber" class="control-label"></label>
+                <input asp-for="GasometerNumber" class="form-control" />
+                <span asp-validation-for="GasometerNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PersonNumber" class="control-label"></label>
+                <input asp-for="PersonNumber" class="form-control" />
+                <span asp-validation-for="PersonNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Attachment" class="control-label"></label>
+                <input asp-for="Attachment" class="form-control" />
+                <span asp-validation-for="Attachment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ذخیره" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-success" asp-action="Index">بازگشت</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

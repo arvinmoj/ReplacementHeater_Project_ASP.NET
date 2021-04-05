@@ -1,0 +1,76 @@
+﻿@model Models.ReplacementHeater
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>تغییرات</h1>
+
+<h4>تعویض بخاری</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="ReplacementHeater" asp-action="Edit" method="post">
+            <div class="form-group">
+                <label asp-for="HeaterInstalledType" class="control-label"></label>
+                <input asp-for="HeaterInstalledType" class="form-control" />
+                <span asp-validation-for="HeaterInstalledType" class="text-danger"></span>
+            </div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NameCEO" class="control-label"></label>
+                <select asp-for="NameCEO" class="form-control js-example-basic-single" asp-items="ViewBag.NameCEO"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label"></label>
+                <select asp-for="FullName" class="form-control js-example-basic-single" asp-items="ViewBag.FullName"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="HeaterScrapType" class="control-label"></label>
+                <input asp-for="HeaterScrapType" class="form-control" />
+                <span asp-validation-for="HeaterScrapType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model" class="control-label"></label>
+                <input asp-for="Model" class="form-control" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Capacity" class="control-label"></label>
+                <input asp-for="Capacity" class="form-control" />
+                <span asp-validation-for="Capacity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HeaterScrapSerialNumber" class="control-label"></label>
+                <input asp-for="HeaterScrapSerialNumber" class="form-control" />
+                <span asp-validation-for="HeaterScrapSerialNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HeaterInstalledSerialNumber" class="control-label"></label>
+                <input asp-for="HeaterInstalledSerialNumber" class="form-control" />
+                <span asp-validation-for="HeaterInstalledSerialNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InstallationDate" class="control-label"></label>
+                <input asp-for="InstallationDate" class="form-control" />
+                <span asp-validation-for="InstallationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InstallationTime" class="control-label"></label>
+                <input asp-for="InstallationTime" class="form-control" />
+                <span asp-validation-for="InstallationTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ذخیره" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">بازگشت</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
