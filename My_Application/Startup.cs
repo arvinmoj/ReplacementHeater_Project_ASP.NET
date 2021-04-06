@@ -1,14 +1,12 @@
-using Data;
+using Models;
+using Validator;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using FluentValidation.AspNetCore;
 using FluentValidation;
-using Models;
-using Validator;
 
 namespace My_Application
 {
@@ -28,12 +26,12 @@ namespace My_Application
                .AddRazorRuntimeCompilation()
                .AddFluentValidation();
 
-            //#region Fluent Validation
-            //services.AddTransient<IValidator<Installer>, InstallerValidation>();
-            //services.AddTransient<IValidator<LegalPerson>, LegalPersonValidation>();
-            //services.AddTransient<IValidator<NaturalPerson>, NaturalPersonValidation>();
-            //services.AddTransient<IValidator<ReplacementHeater>, ReplacementHeaterValidation>();
-            //#endregion
+            #region Fluent Validation
+            services.AddTransient<IValidator<Installer>, InstallerValidation>();
+            services.AddTransient<IValidator<LegalPerson>, LegalPersonValidation>();
+            services.AddTransient<IValidator<NaturalPerson>, NaturalPersonValidation>();
+            services.AddTransient<IValidator<ReplacementHeater>, ReplacementHeaterValidation>();
+            #endregion
 
             services.AddTransient<Data.IUnitOfWork, Data.UnitOfWork>(sp =>
             {
