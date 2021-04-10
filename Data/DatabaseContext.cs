@@ -1,25 +1,26 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace Data
 {
-    public class DatabaseContext : DbContext
+    public class DatabaseContext : IdentityDbContext
     {
         public DatabaseContext() : base()
         {
         }
 
-        public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
-        {
-            Database.EnsureCreated();
-        }
+        //public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
+        //{
+        //    Database.EnsureCreated();
+        //}
 
         /// <summary>
         /// Using Migrations!
         /// </summary>
-        //public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
-        //{
-        //}
+        public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
+        {
+        }
 
         // DbSet
         #region DbSet
@@ -34,8 +35,6 @@ namespace Data
 
         // ***** Country *****
         public DbSet<Models.Country> Countries { get; set; }
-        
-        
         // *****
 
         // ***** Installers *****
@@ -61,6 +60,8 @@ namespace Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             // Property Configuration
             #region Property Configuration
 

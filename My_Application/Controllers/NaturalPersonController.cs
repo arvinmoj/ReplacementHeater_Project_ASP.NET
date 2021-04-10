@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace My_Application.Controllers
 {
+    [Authorize]
     public class NaturalPersonController : Infrastructure.BaseControllerWithDatabase
     {
         public NaturalPersonController(IUnitOfWork unitOfWork) : base(unitOfWork)

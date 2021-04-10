@@ -7,6 +7,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using FluentValidation.AspNetCore;
 using FluentValidation;
+using Service.Email.Account;
+using System;
+using Microsoft.AspNetCore.Identity;
+using Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace My_Application
 {
@@ -53,11 +58,70 @@ namespace My_Application
                 return new Data.UnitOfWork(options: options);
             });
 
+            #region Db Context
+            services.AddDbContext<DatabaseContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
+            #endregion
 
-            //#region Db Context
-            //services.AddDbContext<DatabaseContext>(options =>
-            //        options.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
-            //#endregion
+
+            #region Identity Setting
+            // Identity Setting
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                #region User
+                // Require Unique Email
+                options.User.RequireUniqueEmail = true;
+                // Allowed UserName Characters
+                options.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+                #endregion
+
+                #region SignIn
+                // Require Confirmed Email
+                options.SignIn.RequireConfirmedEmail = true;
+                //Require Confirmed Account
+                options.SignIn.RequireConfirmedAccount = false;
+                // Require Confirmed PhoneNumber
+                options.SignIn.RequireConfirmedPhoneNumber = false;
+                #endregion
+
+                #region Password
+                // Required Length
+                options.Password.RequiredLength = 8;
+                // Require Digit
+                options.Password.RequireDigit = true;
+                // Required Unique Chars
+                options.Password.RequiredUniqueChars = 0;
+                // Require Uppercase
+                options.Password.RequireUppercase = true;
+                // Require Lowercase
+                options.Password.RequireLowercase = true;
+                // Require Non Alphanumeric
+                options.Password.RequireNonAlphanumeric = true;
+                #endregion
+
+                #region LockOut
+                // Allowed For NewUsers
+                options.Lockout.AllowedForNewUsers = true;
+                // Max Failed Access Attempts
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                // Default Lockout TimeSpan
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
+                #endregion
+
+            })
+            #endregion
+
+            // Token Error Message
+            .AddEntityFrameworkStores<DatabaseContext>()
+            .AddDefaultTokenProviders();
+
+            services.Configure<DataProtectionTokenProviderOptions>(options =>
+            {
+                options.TokenLifespan = TimeSpan.FromMinutes(10);
+            });
+
+            // Message Sender
+            services.AddScoped<IMessageSender, MessageSender>();
 
         }
 
@@ -75,6 +139,8 @@ namespace My_Application
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

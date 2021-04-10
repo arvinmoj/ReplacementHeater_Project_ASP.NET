@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace My_Application.Controllers
 {
+    [Authorize]
     public class ReplacementHeaterController : Infrastructure.BaseControllerWithDatabase
     {
         public ReplacementHeaterController(IUnitOfWork unitOfWork) : base(unitOfWork)
@@ -37,8 +39,8 @@ namespace My_Application.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            var legalPeople = UnitOfWork.LegalPersonRepository.GetAll().ToString();
-            var naturalPeople = UnitOfWork.NaturalPersonRepository.GetAll().ToString();
+            var legalPeople = UnitOfWork.LegalPersonRepository.GetAll();
+            var naturalPeople = UnitOfWork.NaturalPersonRepository.GetAll();
 
             ViewData["NameCEO"] = new SelectList(legalPeople, "NameCEO", "NameCEO");
             ViewData["FullName"] = new SelectList(naturalPeople, "FullName", "FullName");
@@ -58,8 +60,8 @@ namespace My_Application.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            var legalPeople = UnitOfWork.LegalPersonRepository.GetAll().ToString();
-            var naturalPeople = UnitOfWork.NaturalPersonRepository.GetAll().ToString();
+            var legalPeople = UnitOfWork.LegalPersonRepository.GetAll();
+            var naturalPeople = UnitOfWork.NaturalPersonRepository.GetAll();
 
             ViewData["NameCEO"] = new SelectList(legalPeople, "NameCEO", "NameCEO", replacementHeater.NameCEO);
             ViewData["FullName"] = new SelectList(naturalPeople, "FullName", "FullName", replacementHeater.FullName);
@@ -78,8 +80,8 @@ namespace My_Application.Controllers
                 return NotFound();
             }
 
-            var legalPeople = UnitOfWork.LegalPersonRepository.GetAll().ToString();
-            var naturalPeople = UnitOfWork.NaturalPersonRepository.GetAll().ToString();
+            var legalPeople = UnitOfWork.LegalPersonRepository.GetAll();
+            var naturalPeople = UnitOfWork.NaturalPersonRepository.GetAll();
 
             ViewData["NameCEO"] = new SelectList(legalPeople, "NameCEO", "NameCEO");
             ViewData["FullName"] = new SelectList(naturalPeople, "FullName", "FullName");
@@ -118,8 +120,8 @@ namespace My_Application.Controllers
             }
 
 
-            var legalPeople = UnitOfWork.LegalPersonRepository.GetAll().ToString();
-            var naturalPeople = UnitOfWork.NaturalPersonRepository.GetAll().ToString();
+            var legalPeople = UnitOfWork.LegalPersonRepository.GetAll();
+            var naturalPeople = UnitOfWork.NaturalPersonRepository.GetAll();
 
 
             ViewData["NameCEO"] = new SelectList(legalPeople, "NameCEO", "NameCEO", replacementHeater.NameCEO);

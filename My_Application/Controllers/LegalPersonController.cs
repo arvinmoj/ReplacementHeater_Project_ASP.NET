@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.AspNetCore.Authorization;
 
 namespace My_Application.Controllers
 {
+    [Authorize]
     public class LegalPersonController : Infrastructure.BaseControllerWithDatabase
     {
         public LegalPersonController(IUnitOfWork unitOfWork) : base(unitOfWork)

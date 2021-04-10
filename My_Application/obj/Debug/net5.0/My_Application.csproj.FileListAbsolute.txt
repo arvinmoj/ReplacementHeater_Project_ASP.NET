@@ -298,6 +298,7 @@
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.Internal.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Microsoft.AspNetCore.Razor.Language.dll
@@ -345,6 +346,7 @@
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Newtonsoft.Json.dll
+/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/NLog.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/NLog.Extensions.Logging.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/NLog.Web.AspNetCore.dll
@@ -542,6 +544,12 @@
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/My_Application.TagHelpers.input.cache
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/My_Application.TagHelpers.output.cache
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/My_Application.RazorCoreGenerate.cache
+/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/Razor/Views/Account/ForgotPassword.cshtml.g.cs
+/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/Razor/Views/Account/ForgotPasswordConfirmation.cshtml.g.cs
+/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/Razor/Views/Account/Login.cshtml.g.cs
+/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/Razor/Views/Account/Register.cshtml.g.cs
+/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/Razor/Views/Account/ResetPassword.cshtml.g.cs
+/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/Razor/Views/Account/ResetPasswordConfirmation.cshtml.g.cs
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/Razor/Views/Home/Privacy.cshtml.g.cs
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/Razor/Views/Installer/Create.cshtml.g.cs

@@ -26,8 +26,15 @@ using ViewModels.Error;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/Views/_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1cd1ea7f418127ad7e41cd926eacfc2995426b5a", @"/Views/Installer/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8f750049abf4377a68daddd921fa35f2b9363c07", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8432a923d36eb68c1934a42ed2cd80286925909a", @"/Views/_ViewImports.cshtml")]
     public class Views_Installer_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Models.Installer>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-warning"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -69,7 +76,7 @@ using ViewModels.Error;
 #line hidden
 #nullable disable
             WriteLiteral("\n<h1>نصاب</h1>\n\n<p>\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cd1ea7f418127ad7e41cd926eacfc2995426b5a4928", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cd1ea7f418127ad7e41cd926eacfc2995426b5a5137", async() => {
                 WriteLiteral("ایجاد");
             }
             );
@@ -207,7 +214,7 @@ using ViewModels.Error;
 #line hidden
 #nullable disable
             WriteLiteral("\n                    </td>\n                    <td>\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cd1ea7f418127ad7e41cd926eacfc2995426b5a11657", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cd1ea7f418127ad7e41cd926eacfc2995426b5a11866", async() => {
                 WriteLiteral("تغییرات");
             }
             );
@@ -238,7 +245,7 @@ using ViewModels.Error;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" |\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cd1ea7f418127ad7e41cd926eacfc2995426b5a13830", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cd1ea7f418127ad7e41cd926eacfc2995426b5a14039", async() => {
                 WriteLiteral("جزئیات");
             }
             );
@@ -269,7 +276,7 @@ using ViewModels.Error;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" |\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cd1ea7f418127ad7e41cd926eacfc2995426b5a16005", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1cd1ea7f418127ad7e41cd926eacfc2995426b5a16214", async() => {
                 WriteLiteral("حذف");
             }
             );

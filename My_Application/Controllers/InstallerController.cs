@@ -4,9 +4,11 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace My_Application.Controllers
 {
+    [Authorize]
     public class InstallerController : Infrastructure.BaseControllerWithDatabase
     {
         public InstallerController(IUnitOfWork unitOfWork) : base(unitOfWork)

@@ -1,11 +1,6 @@
-﻿using System;
-using System.Linq;
-using ViewModels.Error;
+﻿using ViewModels.Error;
 using System.Diagnostics;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using Microsoft.Extensions.Logging;
 
 namespace My_Application.Controllers
 {
