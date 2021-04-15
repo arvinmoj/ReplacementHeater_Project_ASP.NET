@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace My_Application.Controllers
 {
-    [Authorize]
+    // [Authorize]
     public class LegalPersonController : Infrastructure.BaseControllerWithDatabase
     {
         public LegalPersonController(IUnitOfWork unitOfWork) : base(unitOfWork)

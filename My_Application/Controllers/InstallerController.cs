@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace My_Application.Controllers
 {
-    [Authorize]
+    // [Authorize]
     public class InstallerController : Infrastructure.BaseControllerWithDatabase
     {
         public InstallerController(IUnitOfWork unitOfWork) : base(unitOfWork)

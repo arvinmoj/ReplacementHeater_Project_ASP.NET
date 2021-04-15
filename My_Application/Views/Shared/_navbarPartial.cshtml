@@ -1,57 +1,46 @@
 ﻿@inject SignInManager<IdentityUser> SignInManager
 
-<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-    <div class="container">
-        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">شوکت</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<header class="p-3 bg-dark text-white">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start ">
+        <a href="/ " class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none ">
+            <svg class="bi me-2 " width="40 " height="32 ">
+                <use xlink:href="#bootstrap " />
+            </svg>
+        </a>
 
-        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-            <ul class="navbar-nav flex-grow-1 ml-auto">
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li class="nav-item">
+                <a class="nav-link px-2 text-white" asp-controller="Home" asp-action="Index">صفحه اصلی</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 text-white" asp-controller="Installer" asp-action="Index">نصاب</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 text-white" asp-controller="LegalPerson" asp-action="Index">کاربر
+                    حقوقی</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 text-white" asp-controller="NaturalPerson" asp-action="Index">کاربر
+                    حقیقی</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link px-2 text-white" asp-controller="ReplacementHeater" asp-action="Index">تعویض
+                    بخاری</a>
+            </li>
+        </ul>
 
-                @if (SignInManager.IsSignedIn(User))
-                {
-                    <li class="nav-item ml-auto">
-                        <form asp-controller="Account" asp-action="LogOut" method="POST">
-                            <button type="submit" class="btn nav-link text-dark">Logout</button>
-                        </form>
-                    </li>
-                }
-                else
-                {
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">ورود</a>
-                    </li>
-                    <li class="nav-item ml-auto">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">ثبت نام</a>
-                    </li>
-                }
-            </ul>
-            
-            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">صفحه اصلی</a>
-                    </li>
-                    @*<li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>*@
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Installer" asp-action="Index">نصاب</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="LegalPerson" asp-action="Index">کاربر حقوقی</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="NaturalPerson" asp-action="Index">کاربر حقیقی</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="ReplacementHeater" asp-action="Index">تعویض بخاری</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="text-start">
+            @if (SignInManager.IsSignedIn(User))
+            {
+                <form asp-controller="Account" asp-action="LogOut" method="POST">
+                    <button class="btn btn-outline-light me-2">خروج</button>
+                </form>
+            }
+            else
+            {
+                <a class="btn btn-outline-light me-2" asp-controller="Account" asp-action="Login">ورود</a>
+                <a class="btn btn-warning" asp-controller="Account" asp-action="Register">ثبت نام</a>
+            }
         </div>
     </div>
-</nav>
+</header>

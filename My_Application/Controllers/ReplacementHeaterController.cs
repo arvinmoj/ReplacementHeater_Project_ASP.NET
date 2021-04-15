@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace My_Application.Controllers
 {
-    [Authorize]
+    // [Authorize]
     public class ReplacementHeaterController : Infrastructure.BaseControllerWithDatabase
     {
         public ReplacementHeaterController(IUnitOfWork unitOfWork) : base(unitOfWork)
