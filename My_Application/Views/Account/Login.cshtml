@@ -23,7 +23,7 @@
         <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["returnUrl"]" method="POST">
             <div asp-validation-summary="ModelOnly"></div>
 
-            <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+            <img class="mb-4" src="~/svg/Login.svg" alt="" width="72" height="57">
 
             <h1 class="h3 mb-3 fw-normal">ورود به سایت</h1>
             @if (ViewData["ErrorMessage"] != null)
@@ -43,6 +43,10 @@
             </div>
 
             <button class="w-100 btn btn-lg btn-primary" type="submit">ورود</button>
+
+            <a class="w-100 btn btn-lg btn-warning input-margin" asp-controller="Account" asp-action="ForgotPassword">رمز عبور را فراموش کرده اید</a>
+
+            <a class="w-100 btn btn-lg btn-success input-margin" asp-controller="Home" asp-action="Index">صفحه اصلی</a>
 
             <p class="mt-5 mb-3 text-muted">&copy; 2020–2021 Arvinmoj</p>
         </form>
