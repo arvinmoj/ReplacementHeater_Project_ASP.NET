@@ -1,63 +1,110 @@
 ﻿@model Models.Installer
 
 @{
-    ViewData["Title"] = "Create";
+    Layout = "_InsertLayout";
+    ViewData["Title"] = "ایجاد";
 }
 
-<h1>ایجاد</h1>
+<h4 class="mb-3">نصاب</h4>
+<hr class="my-4">
+<form asp-controller="Installer" asp-action="Create" method="post" class="needs-validation" novalidate>
+    <div class="row g-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-<h4>نصاب</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-controller="Installer" asp-action="Create" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FullName" class="control-label"></label>
-                <input asp-for="FullName" class="form-control" />
-                <span asp-validation-for="FullName" class="text-danger"></span>
+        <div class="col-6">
+            <label asp-for="FullName" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="FullName"></span>
+                <input asp-for="FullName" type="text" class="form-control" placeholder="FullName" required>
+                <div class="invalid-feedback">
+                    Your username is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="InstallerUserName" class="control-label"></label>
-                <input asp-for="InstallerUserName" class="form-control" />
-                <span asp-validation-for="InstallerUserName" class="text-danger"></span>
+        </div>
+
+        <div class="col-6">
+            <label asp-for="InstallerUserName" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="InstallerUserName"></span>
+                <input asp-for="InstallerUserName" type="text" class="form-control" placeholder="InstallerUserName"
+                    required>
+                <div class="invalid-feedback">
+                    Your InstallerUserName is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="UserNumber" class="control-label"></label>
-                <input asp-for="UserNumber" class="form-control" />
-                <span asp-validation-for="UserNumber" class="text-danger"></span>
+        </div>
+
+        <div class="col-6">
+            <label asp-for="UserNumber" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="UserNumber"></span>
+                <input asp-for="UserNumber" type="text" class="form-control" placeholder="UserNumber" required>
+                <div class="invalid-feedback">
+                    Your UserNumber is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="NationalCode" class="control-label"></label>
-                <input asp-for="NationalCode" class="form-control" />
-                <span asp-validation-for="NationalCode" class="text-danger"></span>
+        </div>
+
+        <div class="col-6">
+            <label asp-for="NationalCode" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="NationalCode"></span>
+                <input asp-for="NationalCode" type="text" class="form-control" placeholder="NationalCode" required>
+                <div class="invalid-feedback">
+                    Your NationalCode is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <input asp-for="PhoneNumber" class="form-control" />
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+
+        <div class="col-6">
+            <label asp-for="PhoneNumber" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="PhoneNumber"></span>
+                <input asp-for="PhoneNumber" type="text" class="form-control" placeholder="PhoneNumber" required>
+                <div class="invalid-feedback">
+                    Your PhoneNumber is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="MobileNumber" class="control-label"></label>
-                <input asp-for="MobileNumber" class="form-control" />
-                <span asp-validation-for="MobileNumber" class="text-danger"></span>
+        </div>
+
+        <div class="col-6">
+            <label asp-for="MobileNumber" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="MobileNumber"></span>
+                <input asp-for="MobileNumber" type="text" class="form-control" placeholder="MobileNumber" required>
+                <div class="invalid-feedback">
+                    Your MobileNumber is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="col-12">
+            <label asp-for="Address" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="Address"></span>
+                <input asp-for="Address" type="text" class="form-control" placeholder="Address" required>
+                <div class="invalid-feedback">
+                    Your Address is required.
+                </div>
             </div>
-            <div class="form-group">
-                <input type="submit" value="ایجاد" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
     </div>
-</div>
 
-<div>
+    <hr class="my-4">
+
+    <button class="w-100 btn btn-primary btn-lg" type="submit">ایجاد</button>
+
+</form>
+
+
+
+
+@*
+
+    <div>
     <a class="btn btn-success" asp-action="Index">بازگشت</a>
-</div>
+    </div> *@
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

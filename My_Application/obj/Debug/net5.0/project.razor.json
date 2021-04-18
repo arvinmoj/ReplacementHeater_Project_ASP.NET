@@ -15639,6 +15639,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/Views/Shared/_ConfirmationLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_ConfirmationLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -15656,6 +15661,11 @@
     {
       "FilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/Views/Shared/_InsertLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_InsertLayout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15711,6 +15721,11 @@
     {
       "FilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/Views/Installer/Delete.cshtml",
       "TargetPath": "Views\\Installer\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/Views/Shared/_AccountLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_AccountLayout.cshtml",
       "FileKind": "mvc"
     },
     {

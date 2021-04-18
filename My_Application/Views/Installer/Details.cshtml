@@ -1,6 +1,7 @@
 ﻿@model Models.Installer
 
 @{
+    Layout = "_AccountLayout";
     ViewData["Title"] = "Details";
 }
 
@@ -10,46 +11,46 @@
     <h4>نصاب</h4>
     <hr />
     <dl class="row">
-        <dt class = "col-sm-2">
+        <dt class = "col-5">
             @Html.DisplayNameFor(model => model.FullName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-5">
             @Html.DisplayFor(model => model.FullName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-5">
             @Html.DisplayNameFor(model => model.InstallerUserName)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-5">
             @Html.DisplayFor(model => model.InstallerUserName)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-5">
             @Html.DisplayNameFor(model => model.UserNumber)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-5">
             @Html.DisplayFor(model => model.UserNumber)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-5">
             @Html.DisplayNameFor(model => model.NationalCode)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-5">
             @Html.DisplayFor(model => model.NationalCode)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-5">
             @Html.DisplayNameFor(model => model.PhoneNumber)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-5">
             @Html.DisplayFor(model => model.PhoneNumber)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-5">
             @Html.DisplayNameFor(model => model.MobileNumber)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-5">
             @Html.DisplayFor(model => model.MobileNumber)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-5">
             @Html.DisplayNameFor(model => model.Address)
         </dt>
-        <dd class = "col-sm-10">
+        <dd class = "col-5">
             @Html.DisplayFor(model => model.Address)
         </dd>
     </dl>
