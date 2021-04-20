@@ -4,11 +4,14 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>نصاب</h1>
+<br>
+<div class="container">
+    <h3>نصاب</h3>
+    <p>
+        <a class="btn btn-success" asp-action="Create">ایجاد</a>
+    </p>
+</div>
 
-<p>
-    <a class="btn btn-success" asp-action="Create">ایجاد</a>
-</p>
 
 <br />
 
@@ -67,7 +70,7 @@
                     </td>
                     <td>
                         <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">تغییرات</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-primary" >جزئیات</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-primary">جزئیات</a> |
                         <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">حذف</a>
                     </td>
                 </tr>

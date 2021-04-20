@@ -4,11 +4,13 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>کاربر حقیقی</h1>
-
-<p>
-    <a class="btn btn-warning" asp-action="Create">ایجاد</a>
-</p>
+<br>
+<div class="container">
+    <h3>کاربر حقیقی</h3>
+    <p>
+        <a class="btn btn-success" asp-action="Create">ایجاد</a>
+    </p>
+</div>
 
 <br />
 
@@ -111,9 +113,9 @@
                         @Html.DisplayFor(modelItem => item.Attachment)
                     </td>
                     <td>
-                        <a asp-action="Edit" asp-route-id="@item.Id">تغییرات</a> |
-                        <a asp-action="Details" asp-route-id="@item.Id">جزئیات</a> |
-                        <a asp-action="Delete" asp-route-id="@item.Id">حذف</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">تغییرات</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-primary">جزئیات</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">حذف</a>
                     </td>
                 </tr>
             }
