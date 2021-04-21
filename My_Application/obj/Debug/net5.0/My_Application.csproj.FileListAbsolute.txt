@@ -589,3 +589,4 @@
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/ref/My_Application.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/My_Application.pdb
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/My_Application.genruntimeconfig.cache
+/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/Razor/Views/Shared/_DetailsLayout.cshtml.g.cs
