@@ -6,8 +6,8 @@
 }
 
 <h4 class="mb-3">کاربر حقیقی</h4>
-<hr class="my-4" />
 
+<hr class="my-4" />
 
 <form asp-controller="NaturalPerson" asp-action="Create" method="post" class="needs-validation" novalidate>
     <div class="row g-3">
@@ -79,7 +79,7 @@
             <label asp-for="EmailAddress" class="control-label"></label>
             <input asp-for="EmailAddress" class="form-control" />
             <span asp-validation-for="EmailAddress" class="text-danger"></span>
-        </div> *@
+            </div> *@
 
         <div class="col-6">
             <label asp-for="PhoneNumber" class="form-label"></label>
@@ -96,7 +96,7 @@
             <label asp-for="PhoneNumber" class="control-label"></label>
             <input asp-for="PhoneNumber" class="form-control" />
             <span asp-validation-for="PhoneNumber" class="text-danger"></span>
-        </div> *@
+            </div> *@
 
         <div class="col-6">
             <label asp-for="MobileNumber" class="form-label"></label>
@@ -113,24 +113,25 @@
             <label asp-for="MobileNumber" class="control-label"></label>
             <input asp-for="MobileNumber" class="form-control" />
             <span asp-validation-for="MobileNumber" class="text-danger"></span>
-        </div> *@
+            </div> *@
 
         <div class="col-6">
             <label asp-for="City" class="form-label"></label>
             <div class="input-group has-validation">
                 <span asp-validation-for="City"></span>
-                <select asp-for="City" class="js-example-basic-single form-select" asp-items="ViewBag.Cities" required></select>
+                <select asp-for="City" class="js-example-basic-single form-select" asp-items="ViewBag.Cities"
+                    required></select>
                 <div class="invalid-feedback">
                     Your City is required.
                 </div>
             </div>
         </div>
 
-        
+
         @* <div class="form-group">
             <label asp-for="City" class="control-label"></label>
             <select asp-for="City" class="form-control js-example-basic-single" asp-items="ViewBag.Cities"></select>
-        </div> *@
+            </div> *@
 
         <div class="col-6">
             <label asp-for="State" class="form-label"></label>
@@ -147,7 +148,7 @@
         @* <div class="form-group">
             <label asp-for="State" class="control-label"></label>
             <select asp-for="State" class="form-control js-example-basic-single" asp-items="ViewBag.States"></select>
-        </div> *@
+            </div> *@
 
         <div class="col-6">
             <label asp-for="Region" class="form-label"></label>
@@ -164,7 +165,7 @@
             <label asp-for="Region" class="control-label"></label>
             <input asp-for="Region" class="form-control" />
             <span asp-validation-for="Region" class="text-danger"></span>
-        </div> *@
+            </div> *@
 
         <div class="col-12">
             <label asp-for="Address" class="form-label"></label>
@@ -181,7 +182,7 @@
             <label asp-for="Address" class="control-label"></label>
             <input asp-for="Address" class="form-control" />
             <span asp-validation-for="Address" class="text-danger"></span>
-        </div> *@
+            </div> *@
 
         <div class="col-12">
             <label asp-for="InstallationLocation" class="form-label"></label>
@@ -198,7 +199,7 @@
             <label asp-for="InstallationLocation" class="control-label"></label>
             <input asp-for="InstallationLocation" class="form-control" />
             <span asp-validation-for="InstallationLocation" class="text-danger"></span>
-        </div> *@
+            </div> *@
 
         <div class="col-6">
             <label asp-for="GasometerType" class="form-label"></label>
@@ -215,7 +216,7 @@
             <label asp-for="GasometerType" class="control-label"></label>
             <input asp-for="GasometerType" class="form-control" />
             <span asp-validation-for="GasometerType" class="text-danger"></span>
-        </div> *@
+            </div> *@
 
         <div class="col-6">
             <label asp-for="GasometerNumber" class="form-label"></label>
@@ -232,7 +233,7 @@
             <label asp-for="GasometerNumber" class="control-label"></label>
             <input asp-for="GasometerNumber" class="form-control" />
             <span asp-validation-for="GasometerNumber" class="text-danger"></span>
-        </div> *@
+            </div> *@
 
         <div class="col-6">
             <label asp-for="PersonNumber" class="form-label"></label>
@@ -250,7 +251,7 @@
             <label asp-for="PersonNumber" class="control-label"></label>
             <input asp-for="PersonNumber" class="form-control" />
             <span asp-validation-for="PersonNumber" class="text-danger"></span>
-        </div> *@
+            </div> *@
 
         <div class="col-6">
             <label asp-for="Attachment" class="form-label"></label>
@@ -267,7 +268,7 @@
             <label asp-for="Attachment" class="control-label"></label>
             <input asp-for="Attachment" class="form-control" />
             <span asp-validation-for="Attachment" class="text-danger"></span>
-        </div> *@
+            </div> *@
 
         <hr class="my-4">
 

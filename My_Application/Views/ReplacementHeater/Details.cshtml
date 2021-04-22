@@ -1,78 +1,113 @@
 ﻿@model Models.ReplacementHeater
 
 @{
+    Layout = "_DetailsLayout";
     ViewData["Title"] = "Details";
 }
 
-<h1>جزئیات</h1>
+<br>
+
+<h3>جزئیات</h3>
+
+<br>
+
+<h4>تعویض بخاری</h4>
+
+<br>
+
+<dl class="row">
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.HeaterInstalledType)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.HeaterInstalledType)
+    </dd>
+
+    <hr class="my-2" />
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.NameCEO)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.NameCEO)
+    </dd>
+
+    <hr class="my-2" />
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.FullName)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.FullName)
+    </dd>
+
+    <hr class="my-2" />
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.HeaterScrapType)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.HeaterScrapType)
+    </dd>
+
+    <hr class="my-2" />
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Model)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Model)
+    </dd>
+
+    <hr class="my-2" />
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.Capacity)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.Capacity)
+    </dd>
+
+    <hr class="my-2" />
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.HeaterScrapSerialNumber)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.HeaterScrapSerialNumber)
+    </dd>
+
+    <hr class="my-2" />
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.HeaterInstalledSerialNumber)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.HeaterInstalledSerialNumber)
+    </dd>
+
+    <hr class="my-2" />
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.InstallationDate)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.InstallationDate)
+    </dd>
+
+    <hr class="my-2" />
+
+    <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.InstallationTime)
+    </dt>
+    <dd class="col-sm-10">
+        @Html.DisplayFor(model => model.InstallationTime)
+    </dd>
+
+</dl>
 
 <div>
-    <h4>تعویض بخاری</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.HeaterInstalledType)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.HeaterInstalledType)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NameCEO)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NameCEO)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.FullName)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.FullName)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.HeaterScrapType)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.HeaterScrapType)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Model)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Model)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Capacity)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Capacity)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.HeaterScrapSerialNumber)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.HeaterScrapSerialNumber)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.HeaterInstalledSerialNumber)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.HeaterInstalledSerialNumber)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.InstallationDate)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.InstallationDate)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.InstallationTime)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.InstallationTime)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">تغییرات</a> |
-    <a class="btn btn-success" asp-action="Index">بازگشت</a>
+    <a class="btn btn-success" asp-action="Index">بازگشت</a> |
+    <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">تغییرات</a>
 </div>
