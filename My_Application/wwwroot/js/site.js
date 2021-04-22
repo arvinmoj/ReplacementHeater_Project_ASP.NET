@@ -1,14 +1,4 @@
 ﻿$(document).ready(function() {
-    $('.js-example-basic-single').select2();
-});
-
-$(document).ready(function() {
-    $('#myModal').on('shown.bs.modal', function() {
-        $('#myInput').trigger('focus')
-    })
-});
-
-$(document).ready(function() {
     $('.mydatatable').dataTable({
         "language": {
             "sEmptyTable": "هیچ داده‌ای در جدول وجود ندارد",

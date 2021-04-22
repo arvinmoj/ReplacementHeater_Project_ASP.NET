@@ -1,116 +1,333 @@
 ﻿@model Models.LegalPerson
 
 @{
-    ViewData["Title"] = "Edit";
+    Layout = "_CreateLayout";
+    ViewData["Title"] = "تغییرات";
 }
 
-<h1>تغییرات</h1>
 
-<h4>LegalPerson</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-controller="LegalPerson" asp-action="Edit" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="LegalPersonId" />
-            <div class="form-group">
-                <label asp-for="InstallerUserName" class="control-label"></label>
-                <select asp-for="InstallerUserName" class="form-control js-example-basic-single" asp-items="ViewBag.InstallerUserName"></select>
+<h4 class="mb-3">کاربر حقوقی</h4>
+<hr class="my-4">
+<form asp-controller="LegalPerson" asp-action="Create" method="post" class="needs-validation" novalidate>
+    <div class="row g-3">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="col-6">
+            <label asp-for="InstallerUserName" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="InstallerUserName"></span>
+                <input asp-for="InstallerUserName" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your InstallerUserName is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="CompanyName" class="control-label"></label>
-                <input asp-for="CompanyName" class="form-control" />
-                <span asp-validation-for="CompanyName" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="InstallerUserName" class="control-label"></label>
+            <select asp-for="InstallerUserName" class="form-control js-example-basic-single"
+            asp-items="ViewBag.InstallerUserName"></select>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="CompanyName" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="CompanyName"></span>
+                <input asp-for="CompanyName" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your CompanyName is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="NameCEO" class="control-label"></label>
-                <input asp-for="NameCEO" class="form-control" />
-                <span asp-validation-for="NameCEO" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="CompanyName" class="control-label"></label>
+            <input asp-for="CompanyName" class="form-control" />
+            <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="NameCEO" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="NameCEO"></span>
+                <input asp-for="NameCEO" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your NameCEO is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="EmailAddress" class="control-label"></label>
-                <input asp-for="EmailAddress" class="form-control" />
-                <span asp-validation-for="EmailAddress" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="NameCEO" class="control-label"></label>
+            <input asp-for="NameCEO" class="form-control" />
+            <span asp-validation-for="NameCEO" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="EmailAddress" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="EmailAddress"></span>
+                <input asp-for="EmailAddress" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your EmailAddress is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PhoneNumber" class="control-label"></label>
-                <input asp-for="PhoneNumber" class="form-control" />
-                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+
+
+        @* <div class="form-group">
+            <label asp-for="EmailAddress" class="control-label"></label>
+            <input asp-for="EmailAddress" class="form-control" />
+            <span asp-validation-for="EmailAddress" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="PhoneNumber" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="PhoneNumber"></span>
+                <input asp-for="PhoneNumber" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your PhoneNumber is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="City" class="control-label"></label>
-                <select asp-for="City" class="form-control js-example-basic-single" asp-items="ViewBag.Cities"></select>
+        </div>
+
+
+        @* <div class="form-group">
+            <label asp-for="PhoneNumber" class="control-label"></label>
+            <input asp-for="PhoneNumber" class="form-control" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="City" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="City"></span>
+                <select asp-for="City" class="js-example-basic-single form-select" asp-items="ViewBag.Cities"
+                    required></select>
+                <div class="invalid-feedback">
+                    Your City is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="State" class="control-label"></label>
-                <select asp-for="State" class="form-control js-example-basic-single" asp-items="ViewBag.States"></select>
+        </div>
+
+
+        @* <div class="form-group">
+            <label asp-for="City" class="control-label"></label>
+            <select asp-for="City" class="form-control js-example-basic-single" asp-items="ViewBag.Cities"></select>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="State" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="State"></span>
+                <select asp-for="State" class="js-example-basic-single form-select" asp-items="ViewBag.States"
+                    required></select>
+                <div class="invalid-feedback">
+                    Your State is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Region" class="control-label"></label>
-                <input asp-for="Region" class="form-control" />
-                <span asp-validation-for="Region" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="State" class="control-label"></label>
+            <select asp-for="State" class="form-control js-example-basic-single" asp-items="ViewBag.States"></select>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="Region" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="Region"></span>
+                <input asp-for="Region" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your Region is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
-                <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="Region" class="control-label"></label>
+            <input asp-for="Region" class="form-control" />
+            <span asp-validation-for="Region" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-12">
+            <label asp-for="Address" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="Address"></span>
+                <input asp-for="Address" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your Address is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="NationalCode" class="control-label"></label>
-                <input asp-for="NationalCode" class="form-control" />
-                <span asp-validation-for="NationalCode" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="Address" class="control-label"></label>
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="NationalCode" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="NationalCode"></span>
+                <input asp-for="NationalCode" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your NationalCode is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="RegistrationNumber" class="control-label"></label>
-                <input asp-for="RegistrationNumber" class="form-control" />
-                <span asp-validation-for="RegistrationNumber" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="NationalCode" class="control-label"></label>
+            <input asp-for="NationalCode" class="form-control" />
+            <span asp-validation-for="NationalCode" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="RegistrationNumber" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="RegistrationNumber"></span>
+                <input asp-for="RegistrationNumber" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your RegistrationNumber is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="EconomicCode" class="control-label"></label>
-                <input asp-for="EconomicCode" class="form-control" />
-                <span asp-validation-for="EconomicCode" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="RegistrationNumber" class="control-label"></label>
+            <input asp-for="RegistrationNumber" class="form-control" />
+            <span asp-validation-for="RegistrationNumber" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="EconomicCode" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="EconomicCode"></span>
+                <input asp-for="EconomicCode" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your EconomicCode is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="RecipientName" class="control-label"></label>
-                <input asp-for="RecipientName" class="form-control" />
-                <span asp-validation-for="RecipientName" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="EconomicCode" class="control-label"></label>
+            <input asp-for="EconomicCode" class="form-control" />
+            <span asp-validation-for="EconomicCode" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="RecipientName" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="RecipientName"></span>
+                <input asp-for="RecipientName" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your RecipientName is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="InstallationLocation" class="control-label"></label>
-                <input asp-for="InstallationLocation" class="form-control" />
-                <span asp-validation-for="InstallationLocation" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="RecipientName" class="control-label"></label>
+            <input asp-for="RecipientName" class="form-control" />
+            <span asp-validation-for="RecipientName" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-12">
+            <label asp-for="InstallationLocation" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="InstallationLocation"></span>
+                <input asp-for="InstallationLocation" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your InstallationLocation is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="GasometerType" class="control-label"></label>
-                <input asp-for="GasometerType" class="form-control" />
-                <span asp-validation-for="GasometerType" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="InstallationLocation" class="control-label"></label>
+            <input asp-for="InstallationLocation" class="form-control" />
+            <span asp-validation-for="InstallationLocation" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="GasometerType" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="GasometerType"></span>
+                <input asp-for="GasometerType" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your GasometerType is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="GasometerNumber" class="control-label"></label>
-                <input asp-for="GasometerNumber" class="form-control" />
-                <span asp-validation-for="GasometerNumber" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="GasometerType" class="control-label"></label>
+            <input asp-for="GasometerType" class="form-control" />
+            <span asp-validation-for="GasometerType" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="GasometerNumber" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="GasometerNumber"></span>
+                <input asp-for="GasometerNumber" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your GasometerNumber is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="PersonNumber" class="control-label"></label>
-                <input asp-for="PersonNumber" class="form-control" />
-                <span asp-validation-for="PersonNumber" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="GasometerNumber" class="control-label"></label>
+            <input asp-for="GasometerNumber" class="form-control" />
+            <span asp-validation-for="GasometerNumber" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="PersonNumber" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="PersonNumber"></span>
+                <input asp-for="PersonNumber" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your PersonNumber is required.
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Attachment" class="control-label"></label>
-                <input asp-for="Attachment" class="form-control" />
-                <span asp-validation-for="Attachment" class="text-danger"></span>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="PersonNumber" class="control-label"></label>
+            <input asp-for="PersonNumber" class="form-control" />
+            <span asp-validation-for="PersonNumber" class="text-danger"></span>
+            </div> *@
+
+        <div class="col-6">
+            <label asp-for="Attachment" class="form-label"></label>
+            <div class="input-group has-validation">
+                <span asp-validation-for="Attachment"></span>
+                <input asp-for="Attachment" type="text" class="form-control" required>
+                <div class="invalid-feedback">
+                    Your Attachment is required.
+                </div>
             </div>
-            <div class="form-group">
-                <input type="submit" value="ذخیره" class="btn btn-primary" />
-            </div>
-        </form>
+        </div>
+
+        @* <div class="form-group">
+            <label asp-for="Attachment" class="control-label"></label>
+            <input asp-for="Attachment" class="form-control" />
+            <span asp-validation-for="Attachment" class="text-danger"></span>
+            </div> *@
+
+        <hr class="my-4">
+
+        <button class="w-100 btn btn-success btn-lg" type="submit">ایجاد تغییرات</button>
+
     </div>
-</div>
-
-<div>
-    <a class="btn btn-success" asp-action="Index">بازگشت</a>
-</div>
+</form>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
