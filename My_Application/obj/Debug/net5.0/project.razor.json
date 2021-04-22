@@ -15699,6 +15699,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/Views/Shared/_footerPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_footerPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

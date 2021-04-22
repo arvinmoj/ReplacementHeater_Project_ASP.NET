@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,9 +14,14 @@
 </head>
 
 <body>
+
     <main class="form-signin text-center">
         @RenderBody()
+        <p class="mt-5 mb-3 text-muted">&copy; 2020–2021 Arvinmoj</p>
     </main>
+
+
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 
