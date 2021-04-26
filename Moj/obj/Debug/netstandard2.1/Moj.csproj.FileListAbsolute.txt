@@ -6,3 +6,4 @@
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/obj/Debug/netstandard2.1/Moj.csproj.CoreCompileInputs.cache
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/obj/Debug/netstandard2.1/Moj.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/obj/Debug/netstandard2.1/Moj.pdb
+/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/obj/Debug/netstandard2.1/Moj.csprojAssemblyReference.cache
