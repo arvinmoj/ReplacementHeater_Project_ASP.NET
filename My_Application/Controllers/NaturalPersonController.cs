@@ -28,7 +28,7 @@ namespace My_Application.Controllers
         public async Task<IActionResult> Details(Guid id)
         {
    
-            var naturalPerson = await UnitOfWork.InstallerRepository.GetByIdAsync(id);
+            var naturalPerson = await UnitOfWork.NaturalPersonRepository.GetByIdAsync(id);
 
             if (naturalPerson == null)
             {
@@ -81,7 +81,7 @@ namespace My_Application.Controllers
         // GET: NaturalPerson/Edit/5
         public async Task<IActionResult> Edit(Guid id)
         {
-            var naturalPerson = await UnitOfWork.LegalPersonRepository.GetByIdAsync(id);
+            var naturalPerson = await UnitOfWork.NaturalPersonRepository.GetByIdAsync(id);
 
             if (naturalPerson == null)
             {

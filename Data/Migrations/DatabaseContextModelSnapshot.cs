@@ -239,6 +239,29 @@ namespace Data.Migrations
                     b.HasIndex("CountryId");
 
                     b.ToTable("City");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("59cb9031-c6d0-41a1-b402-9ae41a2c5098"),
+                            CityName = "تهران",
+                            IdCity = new Guid("16bcbb89-9dcf-4742-82eb-474013215322"),
+                            InsertDateTime = new DateTime(2021, 4, 26, 14, 6, 29, 599, DateTimeKind.Local).AddTicks(3010)
+                        },
+                        new
+                        {
+                            Id = new Guid("4897f3cc-4eb0-4d31-8b6d-6cf9d5208898"),
+                            CityName = "اصفهان",
+                            IdCity = new Guid("a1d501b1-dbb0-478e-8b54-5aea1497bbfb"),
+                            InsertDateTime = new DateTime(2021, 4, 26, 14, 6, 29, 599, DateTimeKind.Local).AddTicks(3990)
+                        },
+                        new
+                        {
+                            Id = new Guid("0e28aa7e-26b8-4da5-9108-09abc68ba8f6"),
+                            CityName = "كرمان",
+                            IdCity = new Guid("5b59b32a-ce68-406a-9eef-1390de1fff51"),
+                            InsertDateTime = new DateTime(2021, 4, 26, 14, 6, 29, 599, DateTimeKind.Local).AddTicks(4020)
+                        });
                 });
 
             modelBuilder.Entity("Models.Country", b =>
@@ -260,6 +283,15 @@ namespace Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Country");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("44eb640e-fe1d-41c6-9cf1-046a34dc3a29"),
+                            CountryName = "ایران",
+                            IdCountry = new Guid("00bc82fd-6896-4cf2-9180-53b1ed4b2c69"),
+                            InsertDateTime = new DateTime(2021, 4, 26, 14, 6, 29, 591, DateTimeKind.Local).AddTicks(7110)
+                        });
                 });
 
             modelBuilder.Entity("Models.Installer", b =>
@@ -618,6 +650,29 @@ namespace Data.Migrations
                     b.HasIndex("CityId");
 
                     b.ToTable("State");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("a1dae866-4eb5-4b43-b85b-2fa02d10151f"),
+                            IdState = new Guid("19def31a-4ea7-45bc-99a2-8d308d00faf3"),
+                            InsertDateTime = new DateTime(2021, 4, 26, 14, 6, 29, 599, DateTimeKind.Local).AddTicks(6680),
+                            StateName = "بم"
+                        },
+                        new
+                        {
+                            Id = new Guid("42c00800-b82f-4612-904d-1287c2c37114"),
+                            IdState = new Guid("13d72840-971d-4771-a855-84a6daecdc0f"),
+                            InsertDateTime = new DateTime(2021, 4, 26, 14, 6, 29, 599, DateTimeKind.Local).AddTicks(7600),
+                            StateName = "ايمانشهر"
+                        },
+                        new
+                        {
+                            Id = new Guid("eb15565c-bc23-4402-a282-817189f68e6c"),
+                            IdState = new Guid("08833e49-2590-4fc7-889e-a9467ee608e8"),
+                            InsertDateTime = new DateTime(2021, 4, 26, 14, 6, 29, 599, DateTimeKind.Local).AddTicks(7640),
+                            StateName = "البرز"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

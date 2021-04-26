@@ -91,7 +91,7 @@ namespace My_Application.Controllers
         
         [HttpPost , ActionName("Edit")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,NameCEO,FullName,HeaterScrapType,Model,Capacity,HeaterScrapSerialNumber,HeaterInstalledSerialNumber,InstallationDate,InstallationTime")] ReplacementHeater replacementHeater)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,HeaterInstalledType,NameCEO,FullName,HeaterScrapType,Model,Capacity,HeaterScrapSerialNumber,HeaterInstalledSerialNumber,InstallationDate,InstallationTime")] ReplacementHeater replacementHeater)
         {
             if (id != replacementHeater.Id)
             {

@@ -183,6 +183,36 @@ namespace Data
 
             // Entity Configuration \\
             #endregion
+
+            // Seed Data
+            #region Seed Data
+
+            // ***** Country *****
+            #region Country
+            // *****
+            modelBuilder.ApplyConfiguration(new SeedData.Countries());
+            // *****
+            // ***** Country ***** \\
+            #endregion
+
+            // ***** City *****
+            #region City
+            // *****
+            modelBuilder.ApplyConfiguration(new SeedData.Cities());
+            // *****
+            // ***** City ***** \\
+            #endregion
+
+            // ***** State *****
+            #region State
+            // *****
+            modelBuilder.ApplyConfiguration(new SeedData.States());
+            // *****
+            // ***** State ***** \\
+            #endregion
+
+            // Seed Data \\
+            #endregion
         }
     }
 }

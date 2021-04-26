@@ -160,7 +160,7 @@ namespace My_Application.Controllers
         // GET: LegalPerson/Delete/5
         public async Task<IActionResult> Delete(Guid id)
         {
-            var legalPerson = await UnitOfWork.InstallerRepository.GetByIdAsync(id);
+            var legalPerson = await UnitOfWork.LegalPersonRepository.GetByIdAsync(id);
             if (legalPerson == null)
             {
                 return NotFound();
