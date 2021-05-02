@@ -10,6 +10,7 @@ namespace ViewModels.Account
 
         // *****
         [MaxLength(64)]
+        [EmailAddress]
         [Display(Name = "EmailAddress")]
         public string Email { get; set; }
         // *****

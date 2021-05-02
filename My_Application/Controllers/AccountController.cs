@@ -132,12 +132,12 @@ namespace My_Application.Controllers
                 // Password Is Locked Out 
                 if (result.IsLockedOut)
                 {
-                    ViewData["ErrorMessage"] = "You've been temporarily locked out of your account for 5 hours";
+                    ViewData["ErrorMessage"] = "شما به مدت 5 ساعت در حساب خود موقتاً قفل شده اید";
                     return View(model);
                 }
 
                 // Error Message
-                ModelState.AddModelError("", "Your User Username Or Password Is Incorrect");
+                ModelState.AddModelError("", "نام کاربری یا رمزعبور شما نادرست است");
             }
             return View(model);
         }
@@ -167,7 +167,7 @@ namespace My_Application.Controllers
                 return Json(true);
             }
 
-            return Json("The Entered Email Is Already Available");
+            return Json("ایمیل وارد شده از قبل موجود است");
         }
 
         // Duplicate Username
@@ -182,7 +182,7 @@ namespace My_Application.Controllers
                 return Json(true);
             }
 
-            return Json("The Entered Username Is Already Available");
+            return Json("نام کاربری وارد شده از قبل موجود است");
         }
         #endregion
 
@@ -207,7 +207,7 @@ namespace My_Application.Controllers
             // Confirm Email
             var result = await _userManager.ConfirmEmailAsync(user, token);
 
-            return Content(result.Succeeded ? " Email Confirmed " : "Email Not Confirmed");
+            return Content(result.Succeeded ? " ایمیل تأیید شد " : "ایمیل تأیید نشده است");
         }
         #endregion
 
@@ -234,7 +234,7 @@ namespace My_Application.Controllers
                 var passwordResetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
                 var emailMessage = Url.Action("ResetPassword", "Account", new { username = user.UserName, token = passwordResetToken }, Request.Scheme);
 
-                await _messageSender.SendEmailAsync(model.Email, subject: "Password Confirmation", emailMessage, isMessageHtml: false);
+                await _messageSender.SendEmailAsync(model.Email, subject: "تایید رمز عبور", emailMessage, isMessageHtml: false);
 
                 return RedirectToAction(nameof(ForgotPasswordConfirmation));
 
