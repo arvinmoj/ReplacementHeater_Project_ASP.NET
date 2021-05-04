@@ -51,7 +51,7 @@
             <label asp-for="EmailAddress" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="EmailAddress" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20">
+                    required minlength="3" maxlength="60">
                 <div class="invalid-feedback">
                     <span asp-validation-for="EmailAddress"></span>
                 </div>
@@ -97,7 +97,7 @@
             <label asp-for="Region" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="Region" type="text" class="form-control" autocomplete="off" spellcheck="false" required
-                    minlength="3" maxlength="20">
+                    minlength="1" maxlength="20">
                 <div class="invalid-feedback">
                     <span asp-validation-for="Region"></span>
                 </div>
@@ -162,7 +162,7 @@
             <label asp-for="InstallationLocation" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="InstallationLocation" type="text" class="form-control" autocomplete="off"
-                    spellcheck="false" required minlength="3" maxlength="20">
+                    spellcheck="false" required minlength="3" maxlength="100">
                 <div class="invalid-feedback">
                     <span asp-validation-for="InstallationLocation"></span>
                 </div>

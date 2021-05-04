@@ -44,7 +44,7 @@
         <div class="col-6">
             <label asp-for="EmailAddress" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="EmailAddress" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="20">
+                <input asp-for="EmailAddress" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="60">
                 <div class="invalid-feedback">
                     <span asp-validation-for="EmailAddress"></span>
                 </div>
@@ -88,7 +88,7 @@
         <div class="col-6">
             <label asp-for="Region" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="Region" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="20">
+                <input asp-for="Region" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="1" maxlength="20">
                 <div class="invalid-feedback">
                     <span asp-validation-for="Region"></span>
                 </div>
@@ -148,7 +148,7 @@
         <div class="col-12">
             <label asp-for="InstallationLocation" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="InstallationLocation" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="20">
+                <input asp-for="InstallationLocation" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="100">
                 <div class="invalid-feedback">
                     <span asp-validation-for="InstallationLocation"></span>
                 </div>
@@ -188,7 +188,7 @@
         <div class="col-6">
             <label asp-for="Attachment" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="Attachment" type="text" class="form-control" autocomplete="off" spellcheck="false">
+                <input asp-for="Attachment" type="text" class="form-control" autocomplete="off" spellcheck="false" required>
                 <div class="invalid-feedback">
                     <span asp-validation-for="Attachment"></span>
                 </div>

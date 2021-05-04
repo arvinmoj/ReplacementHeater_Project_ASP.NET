@@ -38,7 +38,7 @@ namespace Validator
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
                 .NotEmpty()
                 .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+                .MaximumLength(60).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
             // *****
 
             // *****
@@ -73,7 +73,7 @@ namespace Validator
             RuleFor(c => c.Region)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
                 .NotEmpty()
-                .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
+                .MinimumLength(1).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
                 .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
             // *****
 
@@ -90,7 +90,7 @@ namespace Validator
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
                 .NotEmpty()
                 .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+                .MaximumLength(100).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
             // *****
 
             // *****
