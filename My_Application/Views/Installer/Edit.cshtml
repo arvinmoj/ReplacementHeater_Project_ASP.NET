@@ -9,15 +9,17 @@
 <hr class="my-4">
 <form asp-controller="Installer" asp-action="Edit" method="post" class="needs-validation" novalidate>
     <div class="row g-3">
-        <div asp-validation-summary="ModelOnly"  class="text-danger"></div>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
         <input type="hidden" asp-for="InstallerId" />
+
         <div class="col-6">
             <label asp-for="FullName" class="form-label"></label>
             <div class="input-group has-validation">
-                <span asp-validation-for="FullName"></span>
-                <input asp-for="FullName" type="text" class="form-control" required>
+                <input asp-for="FullName" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required minlength="3" maxlength="20">
                 <div class="invalid-feedback">
-                    Your username is required.
+                    <span asp-validation-for="FullName"></span>
                 </div>
             </div>
         </div>
@@ -25,11 +27,10 @@
         <div class="col-6">
             <label asp-for="InstallerUserName" class="form-label"></label>
             <div class="input-group has-validation">
-                <span asp-validation-for="InstallerUserName"></span>
-                <input asp-for="InstallerUserName" type="text" class="form-control"
-                    required>
+                <input asp-for="InstallerUserName" type="text" class="form-control" autocomplete="off"
+                    spellcheck="false" required minlength="3" maxlength="20">
                 <div class="invalid-feedback">
-                    Your InstallerUserName is required.
+                    <span asp-validation-for="InstallerUserName"></span>
                 </div>
             </div>
         </div>
@@ -37,10 +38,10 @@
         <div class="col-6">
             <label asp-for="UserNumber" class="form-label"></label>
             <div class="input-group has-validation">
-                <span asp-validation-for="UserNumber"></span>
-                <input asp-for="UserNumber" type="text" class="form-control" required>
+                <input asp-for="UserNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required minlength="3" maxlength="20" pattern="\d*">
                 <div class="invalid-feedback">
-                    Your UserNumber is required.
+                    <span asp-validation-for="UserNumber"></span>
                 </div>
             </div>
         </div>
@@ -48,10 +49,10 @@
         <div class="col-6">
             <label asp-for="NationalCode" class="form-label"></label>
             <div class="input-group has-validation">
-                <span asp-validation-for="NationalCode"></span>
-                <input asp-for="NationalCode" type="text" class="form-control" required>
+                <input asp-for="NationalCode" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required minlength="3" maxlength="20" pattern="\d*">
                 <div class="invalid-feedback">
-                    Your NationalCode is required.
+                    <span asp-validation-for="NationalCode"></span>
                 </div>
             </div>
         </div>
@@ -59,10 +60,10 @@
         <div class="col-6">
             <label asp-for="PhoneNumber" class="form-label"></label>
             <div class="input-group has-validation">
-                <span asp-validation-for="PhoneNumber"></span>
-                <input asp-for="PhoneNumber" type="text" class="form-control" required>
+                <input asp-for="PhoneNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required minlength="3" maxlength="20" pattern="\d*">
                 <div class="invalid-feedback">
-                    Your PhoneNumber is required.
+                    <span asp-validation-for="PhoneNumber"></span>
                 </div>
             </div>
         </div>
@@ -70,10 +71,10 @@
         <div class="col-6">
             <label asp-for="MobileNumber" class="form-label"></label>
             <div class="input-group has-validation">
-                <span asp-validation-for="MobileNumber"></span>
-                <input asp-for="MobileNumber" type="text" class="form-control" required>
+                <input asp-for="MobileNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required minlength="3" maxlength="20" pattern="\d*">
                 <div class="invalid-feedback">
-                    Your MobileNumber is required.
+                    <span asp-validation-for="MobileNumber"></span>
                 </div>
             </div>
         </div>
@@ -81,13 +82,14 @@
         <div class="col-12">
             <label asp-for="Address" class="form-label"></label>
             <div class="input-group has-validation">
-                <span asp-validation-for="Address"></span>
-                <input asp-for="Address" type="text" class="form-control" required>
+                <input asp-for="Address" type="text" class="form-control" autocomplete="off" spellcheck="false" required
+                    minlength="3" maxlength="100">
                 <div class="invalid-feedback">
-                    Your Address is required.
+                    <span asp-validation-for="Address"></span>
                 </div>
             </div>
         </div>
+
     </div>
 
     <hr class="my-4">
