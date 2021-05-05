@@ -17,8 +17,10 @@
         <div class="col-6">
             <label asp-for="InstallerUserName" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="InstallerUserName" type="text" class="form-control" autocomplete="off"
-                    spellcheck="false" required minlength="3" maxlength="20">
+                <span asp-validation-for="InstallerUserName"></span>
+                <select asp-for="InstallerUserName" class="js-example-basic-single form-select"
+                    asp-items="ViewBag.InstallerUserName" autocomplete="off" spellcheck="false" required>
+                </select>
                 <div class="invalid-feedback">
                     <span asp-validation-for="InstallerUserName"></span>
                 </div>

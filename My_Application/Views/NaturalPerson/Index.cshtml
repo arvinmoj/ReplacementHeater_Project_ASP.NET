@@ -43,12 +43,12 @@
                 <th>
                     @Html.DisplayNameFor(model => model.Region)
                 </th>
-                <th>
+                @* <th>
                     @Html.DisplayNameFor(model => model.Address)
-                </th>
-                <th>
+                </th> *@
+                @* <th>
                     @Html.DisplayNameFor(model => model.InstallationLocation)
-                </th>
+                </th> *@
                 <th>
                     @Html.DisplayNameFor(model => model.GasometerType)
                 </th>
@@ -95,12 +95,12 @@
                     <td>
                         @Html.DisplayFor(modelItem => item.Region)
                     </td>
-                    <td>
+                    @* <td>
                         @Html.DisplayFor(modelItem => item.Address)
-                    </td>
-                    <td>
+                    </td> *@
+                    @* <td>
                         @Html.DisplayFor(modelItem => item.InstallationLocation)
-                    </td>
+                    </td> *@
                     <td>
                         @Html.DisplayFor(modelItem => item.GasometerType)
                     </td>
@@ -126,9 +126,6 @@
                                     class="btn btn-outline-danger">حذف</a></li>
                             </ul>
                         </div>
-                        @* <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">تغییرات</a> |
-                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-primary">جزئیات</a> |
-                            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">حذف</a> *@
                     </td>
                 </tr>
             }

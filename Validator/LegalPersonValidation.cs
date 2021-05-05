@@ -13,9 +13,7 @@ namespace Validator
             // *****
             RuleFor(c => c.InstallerUserName)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty()
-                .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+                .NotEmpty();
             // *****
 
             // *****
