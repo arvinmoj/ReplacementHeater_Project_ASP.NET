@@ -34,25 +34,19 @@ namespace Validator
             // *****
             RuleFor(c => c.NationalCode)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty()
-                .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+                .NotEmpty();
             // *****
 
             // *****
             RuleFor(c => c.PhoneNumber)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty()
-                .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+                .NotEmpty();
             // *****
 
             // *****
             RuleFor(c => c.MobileNumber)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty()
-                .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+                .NotEmpty();
             // *****
 
             // *****

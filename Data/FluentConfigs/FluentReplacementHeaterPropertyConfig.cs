@@ -11,6 +11,19 @@ namespace Data.FluentConfigs
             // ***** ReplacementHeaters *****
             #region ReplacementHeaters
 
+
+            // *****
+            builder
+            .Property(s => s.UserLegalPerson)
+            .HasColumnType("bit");
+            // *****
+
+            // *****
+            builder
+            .Property(s => s.UserNaturalPerson)
+            .HasColumnType("bit");
+            // *****
+
             // *****
             builder
            .Property(s => s.HeaterInstalledType)

@@ -9,17 +9,19 @@ namespace Data
         {
         }
 
-        //public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
-        //{
-        //    Database.EnsureCreated();
-        //}
+        public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
+        {
+            Database.EnsureCreated();
+        }
 
+        #region Using Migrations
         /// <summary>
         /// Using Migrations!
         /// </summary>
-        public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
-        {
-        }
+        //public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
+        //{
+        //}
+        #endregion
 
         // DbSet
         #region DbSet

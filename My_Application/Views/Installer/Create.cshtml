@@ -7,14 +7,15 @@
 
 <h4 class="mb-3">نصاب</h4>
 <hr class="my-4">
-<form  asp-controller="Installer" asp-action="Create" method="post" class="needs-validation" novalidate>
+<form asp-controller="Installer" asp-action="Create" method="post" class="needs-validation" novalidate>
     <div class="row g-3">
         <div class="text-center text-danger" asp-validation-summary="ModelOnly"></div>
 
         <div class="col-6">
             <label asp-for="FullName" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="FullName" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="20">
+                <input asp-for="FullName" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required minlength="3" maxlength="20">
                 <div class="invalid-feedback">
                     <span asp-validation-for="FullName"></span>
                 </div>
@@ -24,7 +25,8 @@
         <div class="col-6">
             <label asp-for="InstallerUserName" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="InstallerUserName" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="20">
+                <input asp-for="InstallerUserName" type="text" class="form-control" autocomplete="off"
+                    spellcheck="false" required minlength="3" maxlength="20">
                 <div class="invalid-feedback">
                     <span asp-validation-for="InstallerUserName"></span>
                 </div>
@@ -34,7 +36,8 @@
         <div class="col-6">
             <label asp-for="UserNumber" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="UserNumber" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="20" pattern="\d*">
+                <input asp-for="UserNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'UserNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="UserNumber"></span>
                 </div>
@@ -44,7 +47,8 @@
         <div class="col-6">
             <label asp-for="NationalCode" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="NationalCode" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="20" pattern="\d*">
+                <input asp-for="NationalCode" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'NationalCode');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="NationalCode"></span>
                 </div>
@@ -54,7 +58,8 @@
         <div class="col-6">
             <label asp-for="PhoneNumber" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="PhoneNumber" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="20" pattern="\d*">
+                <input asp-for="PhoneNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'PhoneNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="PhoneNumber"></span>
                 </div>
@@ -64,7 +69,8 @@
         <div class="col-6">
             <label asp-for="MobileNumber" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="MobileNumber" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="20" pattern="\d*">
+                <input asp-for="MobileNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'MobileNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="MobileNumber"></span>
                 </div>
@@ -74,7 +80,8 @@
         <div class="col-12">
             <label asp-for="Address" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="Address" type="text" class="form-control" autocomplete="off" spellcheck="false" required minlength="3" maxlength="100">
+                <input asp-for="Address" type="text" class="form-control" autocomplete="off" spellcheck="false" required
+                    minlength="3" maxlength="100">
                 <div class="invalid-feedback">
                     <span asp-validation-for="Address"></span>
                 </div>

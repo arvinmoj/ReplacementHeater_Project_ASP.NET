@@ -39,7 +39,7 @@
             <label asp-for="UserNumber" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="UserNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20" pattern="\d*">
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'UserNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="UserNumber"></span>
                 </div>
@@ -50,7 +50,7 @@
             <label asp-for="NationalCode" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="NationalCode" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20" pattern="\d*">
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'NationalCode');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="NationalCode"></span>
                 </div>
@@ -61,7 +61,7 @@
             <label asp-for="PhoneNumber" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="PhoneNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20" pattern="\d*">
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'PhoneNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="PhoneNumber"></span>
                 </div>
@@ -72,7 +72,7 @@
             <label asp-for="MobileNumber" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="MobileNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20" pattern="\d*">
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'MobileNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="MobileNumber"></span>
                 </div>
@@ -89,6 +89,7 @@
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
 

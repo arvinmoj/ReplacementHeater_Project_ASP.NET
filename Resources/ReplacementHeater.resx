@@ -149,4 +149,12 @@
     <value>نوع و مدل بخاری بخاری اسقاطی</value>
     <comment/>
   </data>
+  <data name="UserLegalPerson" xml:space="preserve">
+    <value>کاربر حقوقی</value>
+    <comment/>
+  </data>
+  <data name="UserNaturalPerson" xml:space="preserve">
+    <value>کاربر حقیقی</value>
+    <comment/>
+  </data>
 </root>

@@ -8,90 +8,130 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Resources {
+namespace Resources
+{
     using System;
     using System.Reflection;
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ReplacementHeater {
-        
+    public class ReplacementHeater
+    {
+
         private static System.Resources.ResourceManager resourceMan;
-        
+
         private static System.Globalization.CultureInfo resourceCulture;
-        
+
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        public ReplacementHeater() {
+        public ReplacementHeater()
+        {
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.Equals(null, resourceMan)) {
+        public static System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.Equals(null, resourceMan))
+                {
                     System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Resources.ReplacementHeater", typeof(ReplacementHeater).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static System.Globalization.CultureInfo Culture {
-            get {
+        public static System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-        
-        public static string HeaterInstalledType {
-            get {
+
+        public static string HeaterInstalledType
+        {
+            get
+            {
                 return ResourceManager.GetString("HeaterInstalledType", resourceCulture);
             }
         }
-        
-        public static string HeaterInstalledSerialNumber {
-            get {
+
+        public static string HeaterInstalledSerialNumber
+        {
+            get
+            {
                 return ResourceManager.GetString("HeaterInstalledSerialNumber", resourceCulture);
             }
         }
-        
-        public static string Model {
-            get {
+
+        public static string Model
+        {
+            get
+            {
                 return ResourceManager.GetString("Model", resourceCulture);
             }
         }
-        
-        public static string Capacity {
-            get {
+
+        public static string Capacity
+        {
+            get
+            {
                 return ResourceManager.GetString("Capacity", resourceCulture);
             }
         }
-        
-        public static string InstallationDate {
-            get {
+
+        public static string InstallationDate
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallationDate", resourceCulture);
             }
         }
-        
-        public static string InstallationTime {
-            get {
+
+        public static string InstallationTime
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallationTime", resourceCulture);
             }
         }
-        
-        public static string ScrapHeaterSerialNumber {
-            get {
+
+        public static string ScrapHeaterSerialNumber
+        {
+            get
+            {
                 return ResourceManager.GetString("ScrapHeaterSerialNumber", resourceCulture);
             }
         }
-        
-        public static string ScrapHeaterType {
-            get {
+
+        public static string ScrapHeaterType
+        {
+            get
+            {
                 return ResourceManager.GetString("ScrapHeaterType", resourceCulture);
+            }
+        }
+
+        public static string UserLegalPerson
+        {
+            get
+            {
+                return ResourceManager.GetString("UserLegalPerson", resourceCulture);
+            }
+        }
+        public static string UserNaturalPerson
+        {
+            get
+            {
+                return ResourceManager.GetString("UserNaturalPerson", resourceCulture);
             }
         }
     }

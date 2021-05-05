@@ -18,19 +18,15 @@ namespace Validator
             // *****
 
             // *****
-            // RuleFor(c => c.NameCEO)
-            //     .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-            //     .NotEmpty()
-            //     .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-            //     .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+            RuleFor(c => c.NameCEO)
+                .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
+                .NotEmpty();
             // *****
 
             // *****
-            // RuleFor(c => c.FullName)
-            //     .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-            //     .NotEmpty()
-            //     .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-            //     .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+            RuleFor(c => c.FullName)
+                .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
+                .NotEmpty();
             // *****
 
             // *****
@@ -70,17 +66,13 @@ namespace Validator
             // *****
             RuleFor(c => c.InstallationDate)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty()
-                .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+                .NotEmpty();
             // *****
 
             // *****
             RuleFor(c => c.InstallationTime)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty()
-                .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+                .NotEmpty();
             // *****
 
         }

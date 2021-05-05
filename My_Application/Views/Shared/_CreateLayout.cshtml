@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="rtl">
 
 <head>
@@ -38,12 +38,11 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $('.js-example-basic-single').select2();
         });
-
-
 
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
@@ -65,6 +64,18 @@
                     }, false)
                 })
         })()
+
+        function toEnglishNumber(strNum, name) {
+            var pn = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
+            var en = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+
+            var cache = strNum;
+            for (var i = 0; i < 10; i++) {
+                var regex_fa = new RegExp(pn[i], 'g');
+                cache = cache.replace(regex_fa, en[i]);
+            }
+            $('#' + name).val(cache);
+        }
 
     </script>
     @await RenderSectionAsync("Scripts", required: false)

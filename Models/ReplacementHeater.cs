@@ -18,6 +18,18 @@ namespace Models
 
         // *****
         [Display(ResourceType = typeof(Resources.ReplacementHeater),
+          Name = nameof(Resources.ReplacementHeater.UserLegalPerson))]
+        public bool UserLegalPerson { get; set; }
+        // *****
+
+        // *****
+        [Display(ResourceType = typeof(Resources.ReplacementHeater),
+         Name = nameof(Resources.ReplacementHeater.UserNaturalPerson))]
+        public bool UserNaturalPerson { get; set; }
+        // *****
+
+        // *****
+        [Display(ResourceType = typeof(Resources.ReplacementHeater),
           Name = nameof(Resources.ReplacementHeater.HeaterInstalledType))]
         public string HeaterInstalledType { get; set; }
         // *****

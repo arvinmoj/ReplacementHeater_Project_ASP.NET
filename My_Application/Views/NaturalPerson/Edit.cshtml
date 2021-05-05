@@ -18,8 +18,11 @@
         <div class="col-6">
             <label asp-for="InstallerUserName" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="InstallerUserName" type="text" class="form-control" autocomplete="off"
-                    spellcheck="false" required minlength="3" maxlength="20">
+                <span asp-validation-for="InstallerUserName"></span>
+                <select asp-for="InstallerUserName" class="js-example-basic-single form-select"
+                    asp-items="ViewBag.InstallerUserName" autocomplete="off" spellcheck="false" required>
+                    <option value=""></option>
+                </select>
                 <div class="invalid-feedback">
                     <span asp-validation-for="InstallerUserName"></span>
                 </div>
@@ -41,7 +44,7 @@
             <label asp-for="NationalCode" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="NationalCode" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20" pattern="\d*">
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'NationalCode');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="NationalCode"></span>
                 </div>
@@ -63,7 +66,7 @@
             <label asp-for="PhoneNumber" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="PhoneNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20" pattern="\d*">
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'PhoneNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="PhoneNumber"></span>
                 </div>
@@ -74,7 +77,7 @@
             <label asp-for="MobileNumber" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="MobileNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20" pattern="\d*">
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'MobileNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="MobileNumber"></span>
                 </div>
@@ -85,7 +88,9 @@
             <label asp-for="City" class="form-label"></label>
             <div class="input-group has-validation">
                 <select asp-for="City" class="js-example-basic-single form-select" asp-items="ViewBag.Cities"
-                    autocomplete="off" spellcheck="false" required></select>
+                    autocomplete="off" spellcheck="false" required>
+                    <option value=""></option>
+                </select>
                 <div class="invalid-feedback">
                     <span asp-validation-for="City"></span>
                 </div>
@@ -96,7 +101,9 @@
             <label asp-for="State" class="form-label"></label>
             <div class="input-group has-validation">
                 <select asp-for="State" class="js-example-basic-single form-select" asp-items="ViewBag.States"
-                    autocomplete="off" spellcheck="false" required></select>
+                    autocomplete="off" spellcheck="false" required>
+                    <option value=""></option>
+                </select>
                 <div class="invalid-feedback">
                     <span asp-validation-for="State"></span>
                 </div>
@@ -107,7 +114,7 @@
             <label asp-for="Region" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="Region" type="text" class="form-control" autocomplete="off" spellcheck="false" required
-                    minlength="1" maxlength="20">
+                    minlength="1" maxlength="20" onkeyup="toEnglishNumber(this.value,'Region');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="Region"></span>
                 </div>
@@ -139,8 +146,19 @@
         <div class="col-6">
             <label asp-for="GasometerType" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="GasometerType" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20">
+                <select asp-for="GasometerType" type="text" class="js-example-basic-single form-select"
+                    autocomplete="off" spellcheck="false" required>
+                    <option value=""></option>
+                    <option value="کنتور گاز دیافراگمی G4">
+                        کنتور گاز دیافراگمی G4
+                    </option>
+                    <option value="کنتور هوشمند گاز">
+                        کنتور هوشمند گاز
+                    </option>
+                    <option value="کنتور گاز آلتراسونیک">
+                        کنتور گاز آلتراسونیک
+                    </option>
+                </select>
                 <div class="invalid-feedback">
                     <span asp-validation-for="GasometerType"></span>
                 </div>
@@ -151,7 +169,7 @@
             <label asp-for="GasometerNumber" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="GasometerNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20" pattern="\d*">
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'GasometerNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="GasometerNumber"></span>
                 </div>
@@ -162,7 +180,7 @@
             <label asp-for="PersonNumber" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="PersonNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="3" maxlength="20" pattern="\d*">
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'PersonNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="PersonNumber"></span>
                 </div>
@@ -179,14 +197,13 @@
                 </div>
             </div>
         </div>
-
         <hr class="my-4">
 
         <button class="w-100 btn btn-success btn-lg" type="submit">ایجاد تغییرات</button>
 
     </div>
-    </form>
+</form>
 
-    @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    }
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
