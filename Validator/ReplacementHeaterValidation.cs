@@ -18,15 +18,15 @@ namespace Validator
             // *****
 
             // *****
-            RuleFor(c => c.NameCEO)
-                .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty();
+            //RuleFor(c => c.NameCEO)
+            //    .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
+            //    .NotEmpty();
             // *****
 
             // *****
-            RuleFor(c => c.FullName)
-                .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty();
+            //RuleFor(c => c.FullName)
+            //    .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
+            //    .NotEmpty();
             // *****
 
             // *****
