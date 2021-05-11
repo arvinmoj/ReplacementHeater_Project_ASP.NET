@@ -50,7 +50,7 @@ namespace My_Application.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("HeaterInstalledType,NameCEO,FullName,HeaterScrapType,Model,Capacity,HeaterScrapSerialNumber,HeaterInstalledSerialNumber,InstallationDate,InstallationTime")] ReplacementHeater replacementHeater)
+        public async Task<IActionResult> Create([Bind("HeaterInstalledType,NameCEO,FullName,HeaterScrapType,Model,Capacity,HeaterScrapSerialNumber,HeaterInstalledSerialNumber,InstallationDate,InstallationTime,UserLegalPerson,UserNaturalPerson")] ReplacementHeater replacementHeater)
         {
             if (ModelState.IsValid)
             {

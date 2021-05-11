@@ -50,7 +50,7 @@
         <div class="col-6">
             <label asp-for="EmailAddress" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="EmailAddress" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                <input asp-for="EmailAddress" type="email" class="form-control" autocomplete="off" spellcheck="false"
                     required minlength="3" maxlength="60">
                 <div class="invalid-feedback">
                     <span asp-validation-for="EmailAddress"></span>

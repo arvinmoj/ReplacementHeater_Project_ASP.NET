@@ -38,7 +38,6 @@
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
     <script>
         $(document).ready(function () {
             $('.js-example-basic-single').select2();
@@ -75,6 +74,38 @@
                 cache = cache.replace(regex_fa, en[i]);
             }
             $('#' + name).val(cache);
+        }
+
+        function validate1() {
+            document.getElementById("select2").value = "";
+            if ((document.getElementById("checkbox1").checked = true)) {
+                document.getElementById("checkbox2").checked = false;
+
+                var disabled = document.getElementById("select1").disabled;
+                if (disabled) {
+                    document.getElementById("select1").disabled = false;
+                    document.getElementById("select2").disabled = true;
+                } else {
+                    document.getElementById("select2").disabled = true;
+                    document.getElementById("select1").disabled = false;
+                }
+            }
+        }
+
+        function validate2() {
+            document.getElementById("select1").value = "";
+            if ((document.getElementById("checkbox2").checked = true)) {
+                document.getElementById("checkbox1").checked = false;
+
+                var disabled = document.getElementById("select2").disabled;
+                if (disabled) {
+                    document.getElementById("select2").disabled = false;
+                    document.getElementById("select1").disabled = true;
+                } else {
+                    document.getElementById("select1").disabled = true;
+                    document.getElementById("select2").disabled = false;
+                }
+            }
         }
 
     </script>

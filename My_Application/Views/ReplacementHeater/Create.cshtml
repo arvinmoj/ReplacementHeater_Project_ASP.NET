@@ -9,6 +9,22 @@
 
 <hr class="my-4" />
 
+<div class="form-check">
+    <input asp-for="UserLegalPerson" class="form-check-input" id="checkbox1" onclick="validate1()">
+    <label asp-for="UserLegalPerson" class="form-check-label">
+        کاربر حقوقی
+    </label>
+</div>
+
+<div class="form-check">
+    <input asp-for="UserNaturalPerson" class="form-check-input" id="checkbox2" onclick="validate2()">
+    <label asp-for="UserNaturalPerson" class="form-check-label">
+        کاربر حقیقی
+    </label>
+</div>
+
+<br>
+
 <form asp-controller="ReplacementHeater" asp-action="Create" method="post" class="needs-validation" novalidate>
     <div class="row g-3">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -28,7 +44,7 @@
             <label asp-for="NameCEO" class="form-label"></label>
             <div class="input-group has-validation">
                 <select asp-for="NameCEO" class="js-example-basic-single form-select" asp-items="ViewBag.NameCEO"
-                    autocomplete="off" spellcheck="false">
+                    autocomplete="off" spellcheck="false" id="select1" disabled>
                     <option value=""></option>
                 </select>
                 <div class="invalid-feedback">
@@ -41,7 +57,7 @@
             <label asp-for="FullName" class="form-label"></label>
             <div class="input-group has-validation">
                 <select asp-for="FullName" class="js-example-basic-single form-select" asp-items="ViewBag.FullName"
-                    autocomplete="off" spellcheck="false">
+                    autocomplete="off" spellcheck="false" id="select2" disabled>
                     <option value=""></option>
                 </select>
                 <div class="invalid-feedback">
