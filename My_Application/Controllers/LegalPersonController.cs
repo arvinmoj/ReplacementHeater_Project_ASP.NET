@@ -62,6 +62,7 @@ namespace My_Application.Controllers
             if (ModelState.IsValid)
             {
                 legalPerson.LegalPersonId = Guid.NewGuid();
+                legalPerson.UserLegalPerson = true;
                 await UnitOfWork.LegalPersonRepository.InsertAsync(legalPerson);
                 await UnitOfWork.SaveAsync();
                 return RedirectToAction(nameof(Index));
@@ -76,6 +77,21 @@ namespace My_Application.Controllers
             ViewData["InstallerUserName"] = new SelectList(installers, "InstallerUserName", "InstallerUserName", legalPerson.InstallerUserName);
 
             return View(legalPerson);
+        }
+
+        public async Task<IActionResult> AddHeater([Bind("LegalPersonId,InstallerUserName,CompanyName,NameCEO,EmailAddress,PhoneNumber,City,State,Region,Address,NationalCode,RegistrationNumber,EconomicCode,RecipientName,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] LegalPerson legalPerson)
+        {
+
+            if (ModelState.IsValid)
+            {
+                legalPerson.LegalPersonId = Guid.NewGuid();
+                legalPerson.UserLegalPerson = true;
+                await UnitOfWork.LegalPersonRepository.InsertAsync(legalPerson);
+                await UnitOfWork.SaveAsync();
+            }
+
+            return RedirectToAction("Create", "ReplacementHeater");
+
         }
 
         // GET: LegalPerson/Edit/5

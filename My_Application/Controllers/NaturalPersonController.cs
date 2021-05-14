@@ -27,7 +27,7 @@ namespace My_Application.Controllers
         // GET: NaturalPerson/Details/5
         public async Task<IActionResult> Details(Guid id)
         {
-   
+
             var naturalPerson = await UnitOfWork.NaturalPersonRepository.GetByIdAsync(id);
 
             if (naturalPerson == null)
@@ -62,6 +62,7 @@ namespace My_Application.Controllers
             if (ModelState.IsValid)
             {
                 naturalPerson.NaturalPersonId = Guid.NewGuid();
+                naturalPerson.UserNaturalPerson = true;
                 await UnitOfWork.NaturalPersonRepository.InsertAsync(naturalPerson);
                 await UnitOfWork.SaveAsync();
                 return RedirectToAction(nameof(Index));
@@ -76,6 +77,21 @@ namespace My_Application.Controllers
             ViewData["InstallerUserName"] = new SelectList(installers, "InstallerUserName", "InstallerUserName", naturalPerson.InstallerUserName);
 
             return View(naturalPerson);
+        }
+
+        public async Task<IActionResult> AddHeater([Bind("NaturalPersonId,InstallerUserName,FullName,NationalCode,EmailAddress,PhoneNumber,MobileNumber,City,State,Region,Address,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] NaturalPerson naturalPerson)
+        {
+
+            if (ModelState.IsValid)
+            {
+                naturalPerson.NaturalPersonId = Guid.NewGuid();
+                naturalPerson.UserNaturalPerson = true;
+                await UnitOfWork.NaturalPersonRepository.InsertAsync(naturalPerson);
+                await UnitOfWork.SaveAsync();
+            }
+
+            return RedirectToAction("Create", "ReplacementHeater");
+            
         }
 
         // GET: NaturalPerson/Edit/5
