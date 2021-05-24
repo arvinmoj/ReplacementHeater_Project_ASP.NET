@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YRbrJfQR7qIASdIYnJZtGLgiF8cQzvPo4i4Yum/Ie7kDfZ7PKrC3KmvBaMETM2gkLqsLQuTHK5TTUKSSzCGcxA==",
+  "dgSpecHash": "7oRmReyW0zPyox1PBuVcpqptwfP0aEXuCPzGwwiKFY2LZinsuliA1WM0z9RilZM74OR0s08YU780fU0z3DAcvw==",
   "success": true,
-  "projectFilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj",
+  "projectFilePath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj",
   "expectedPackageFiles": [
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"

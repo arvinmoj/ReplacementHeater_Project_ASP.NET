@@ -9990,11 +9990,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Data/Data.csproj",
+      "projectUniqueName": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Data/Data.csproj",
       "projectName": "Data",
-      "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Data/Data.csproj",
+      "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Data/Data.csproj",
       "packagesPath": "/Users/macbook/.nuget/packages/",
-      "outputPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Data/obj/",
+      "outputPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Data/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -10012,14 +10012,14 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Models/Models.csproj": {
-              "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Models/Models.csproj"
+            "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Models/Models.csproj": {
+              "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Models/Models.csproj"
             },
-            "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj": {
-              "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj"
+            "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj": {
+              "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj"
             },
-            "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj": {
-              "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj"
+            "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj": {
+              "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj"
             }
           }
         }
