@@ -34,7 +34,9 @@ namespace Validator
             // *****
             RuleFor(c => c.NationalCode)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty();
+                .NotEmpty()
+                .MinimumLength(10).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
+                .MaximumLength(10).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
             // *****
 
             // *****

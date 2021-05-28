@@ -47,8 +47,9 @@
         <div class="col-6">
             <label asp-for="NationalCode" class="form-label"></label>
             <div class="input-group has-validation">
-                <input asp-for="NationalCode" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'NationalCode');">
+                <input asp-for="NationalCode" type="text" class="form-control" autocomplete="off"
+                    spellcheck="false" minlength="10" required maxlength="10"
+                    onkeyup="toEnglishNumber(this.value,'NationalCode');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="NationalCode"></span>
                 </div>
