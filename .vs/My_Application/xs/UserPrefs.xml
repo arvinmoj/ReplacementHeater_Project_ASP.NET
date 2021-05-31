@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{854B1E05-9378-4544-8B01-0546065AE210}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Data/Migrations/20210531043654_MyFirstMigration.cs">
+    <Files>
+      <File FileName="Data/Migrations/20210531043654_MyFirstMigration.cs" Line="15" Column="4" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="My_Application" expanded="True">
+            <Node name="Data" expanded="True">
+              <Node name="Migrations" expanded="True">
+                <Node name="20210531043654_MyFirstMigration.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.My__Application PreferredExecutionTarget="/Applications/Google Chrome Dev.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

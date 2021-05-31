@@ -1,9 +1,11 @@
 ﻿using Data;
-using Models;
 using System;
+using Models;
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Authorization;
@@ -13,7 +15,8 @@ namespace My_Application.Controllers
     // [Authorize]
     public class LegalPersonController : Infrastructure.BaseControllerWithDatabase
     {
-        public LegalPersonController(IUnitOfWork unitOfWork) : base(unitOfWork)
+
+        public LegalPersonController(IUnitOfWork unitOfWork) : base(unitOfWork) 
         {
         }
 
