@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -128,9 +129,14 @@ namespace Models
         // *****
 
         // *****
+        public string ImageName { get; set; }
+        // *****
+
+        // *****
+        [NotMapped]
         [Display(ResourceType = typeof(Resources.LegalPerson),
-            Name = nameof(Resources.LegalPerson.Attachment))]
-        public string Attachment { get; set; }
+         Name = nameof(Resources.LegalPerson.Attachment))]
+        public IFormFile Attachment { get; set; }
         // *****
 
         public Installer Installer { get; set; }

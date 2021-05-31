@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wWDLARVdaaPwwPtSP0G4jUhett/8mTroZJBeOTusSJB13WlK24C1WXcDT0IWtb6nhyQk/LZBnMTM6dyO9k+FkQ==",
+  "dgSpecHash": "2Bk+qW29CApC7JubPMgzI8ZI7HHakszQjQWZHFIdpUagJmj13wQZIT3ueVd1cbPWdyH3v646CUNATVvub3umAQ==",
   "success": true,
   "projectFilePath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/My_Application.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,7 @@
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.hosting.abstractions/2.2.0/microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.hosting.server.abstractions/2.2.0/microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.html.abstractions/2.2.0/microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
-    "/Users/macbook/.nuget/packages/microsoft.aspnetcore.http/2.2.0/microsoft.aspnetcore.http.2.2.0.nupkg.sha512",
+    "/Users/macbook/.nuget/packages/microsoft.aspnetcore.http/2.2.2/microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.http.extensions/2.2.0/microsoft.aspnetcore.http.extensions.2.2.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.http.features/2.2.0/microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
