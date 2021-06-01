@@ -128,9 +128,9 @@ namespace Data.FluentConfigs
             // *****
 
             // *****
-        //     builder
-        //    .Property(s => s.Attachment)
-        //    .IsRequired();
+            builder
+           .Property(s => s.Attachment)
+           .IsRequired();
             // *****
 
             // ***** LegalPerson  ***** \\
