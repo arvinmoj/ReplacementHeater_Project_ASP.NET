@@ -76,12 +76,6 @@ namespace Models
 
         // *****
         [Display(ResourceType = typeof(Resources.NaturalPersons),
-           Name = nameof(Resources.NaturalPersons.Region))]
-        public string Region { get; set; }
-        // *****
-
-        // *****
-        [Display(ResourceType = typeof(Resources.NaturalPersons),
            Name = nameof(Resources.NaturalPersons.Address))]
         public string Address { get; set; }
         // *****
@@ -101,13 +95,13 @@ namespace Models
         // *****
         [Display(ResourceType = typeof(Resources.NaturalPersons),
            Name = nameof(Resources.NaturalPersons.GasometerNumber))]
-        public int GasometerNumber { get; set; }
+        public string GasometerNumber { get; set; }
         // *****
 
         // *****
         [Display(ResourceType = typeof(Resources.NaturalPersons),
            Name = nameof(Resources.NaturalPersons.PersonNumber))]
-        public int PersonNumber { get; set; }
+        public string PersonNumber { get; set; }
         // *****
 
         // *****

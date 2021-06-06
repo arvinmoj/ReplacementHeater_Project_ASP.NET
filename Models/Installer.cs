@@ -32,7 +32,7 @@ namespace Models
         // *****
         [Display(ResourceType = typeof(Resources.Installer),
            Name = nameof(Resources.Installer.UserNumber))]
-        public int UserNumber { get; set; }
+        public string UserNumber { get; set; }
         // *****
 
         // *****

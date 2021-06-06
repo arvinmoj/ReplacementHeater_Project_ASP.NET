@@ -13,6 +13,12 @@ namespace Data.FluentConfigs
 
             // *****
             builder
+            .Property(s => s.UserLegalPerson)
+            .IsRequired();
+            // *****
+
+            // *****
+            builder
            .Property(s => s.InstallerUserName)
            .IsRequired()
            .HasMaxLength(128);
@@ -62,13 +68,6 @@ namespace Data.FluentConfigs
 
             // *****
             builder
-           .Property(s => s.Region)
-           .IsRequired()
-           .HasMaxLength(128);
-            // *****
-
-            // *****
-            builder
            .Property(s => s.Address)
            .IsRequired()
            .HasMaxLength(256);
@@ -76,21 +75,16 @@ namespace Data.FluentConfigs
 
             // *****
             builder
-           .Property(s => s.NationalCode)
-           .IsRequired()
-           .HasMaxLength(128);
-            // *****
-
-            // *****
-            builder
-           .Property(s => s.RegistrationNumber)
-           .IsRequired();
+            .Property(s => s.RegistrationNumber)
+            .IsRequired()
+            .HasMaxLength(128);
             // *****
 
             // *****
             builder
            .Property(s => s.EconomicCode)
-           .IsRequired();
+           .IsRequired()
+           .HasMaxLength(128);
             // *****
 
             // *****
@@ -118,13 +112,15 @@ namespace Data.FluentConfigs
             // *****
             builder
            .Property(s => s.GasometerNumber)
-           .IsRequired();
+           .IsRequired()
+           .HasMaxLength(128);
             // *****
 
             // *****
             builder
            .Property(s => s.PersonNumber)
-           .IsRequired();
+           .IsRequired()
+           .HasMaxLength(128);
             // *****
 
             // *****

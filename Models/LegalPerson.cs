@@ -69,20 +69,8 @@ namespace Models
 
         // *****
         [Display(ResourceType = typeof(Resources.LegalPerson),
-          Name = nameof(Resources.LegalPerson.Region))]
-        public string Region { get; set; }
-        // *****
-
-        // *****
-        [Display(ResourceType = typeof(Resources.LegalPerson),
           Name = nameof(Resources.LegalPerson.Address))]
         public string Address { get; set; }
-        // *****
-
-        // *****
-        [Display(ResourceType = typeof(Resources.LegalPerson),
-          Name = nameof(Resources.LegalPerson.NationalCode))]
-        public string NationalCode { get; set; }
         // *****
 
         // *****
@@ -118,13 +106,13 @@ namespace Models
         // *****
         [Display(ResourceType = typeof(Resources.LegalPerson),
           Name = nameof(Resources.LegalPerson.GasometerNumber))]
-        public int GasometerNumber { get; set; }
+        public string GasometerNumber { get; set; }
         // *****
 
         // *****
         [Display(ResourceType = typeof(Resources.LegalPerson),
           Name = nameof(Resources.LegalPerson.PersonNumber))]
-        public int PersonNumber { get; set; }
+        public string PersonNumber { get; set; }
         // *****
 
         // *****

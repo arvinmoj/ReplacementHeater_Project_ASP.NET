@@ -28,7 +28,8 @@ namespace Data.FluentConfigs
             // *****
             builder
             .Property(s => s.UserNumber)
-            .IsRequired();
+            .IsRequired()
+            .HasMaxLength(128);
             // *****
 
             // *****

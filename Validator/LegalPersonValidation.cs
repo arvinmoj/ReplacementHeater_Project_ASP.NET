@@ -10,6 +10,7 @@ namespace Validator
         public LegalPersonValidation()
         {
 
+
             // *****
             RuleFor(c => c.InstallerUserName)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
@@ -43,7 +44,9 @@ namespace Validator
             // *****
             RuleFor(c => c.PhoneNumber)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty();
+                .NotEmpty()
+                .MinimumLength(11).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
+                .MaximumLength(11).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
             // *****
 
             // *****
@@ -59,25 +62,11 @@ namespace Validator
             // *****
 
             // *****
-            RuleFor(c => c.Region)
-                .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty()
-                .MinimumLength(1).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
-            // *****
-
-            // *****
             RuleFor(c => c.Address)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
                 .NotEmpty()
-                .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
+                .MinimumLength(10).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
                 .MaximumLength(100).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
-            // *****
-
-            // *****
-            RuleFor(c => c.NationalCode)
-                .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty();
             // *****
 
             // *****
@@ -117,13 +106,17 @@ namespace Validator
             // *****
             RuleFor(c => c.GasometerNumber)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty();
+                .NotEmpty()
+                .MinimumLength(5).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
+                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
             // *****
 
             // *****
             RuleFor(c => c.PersonNumber)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .NotEmpty();
+                .NotEmpty()
+                .MinimumLength(5).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
+                .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
             // *****
 
         }

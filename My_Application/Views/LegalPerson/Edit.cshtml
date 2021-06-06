@@ -98,34 +98,12 @@
             </div>
         </div>
 
-        <div class="col-6">
-            <label asp-for="Region" class="form-label"></label>
-            <div class="input-group has-validation">
-                <input asp-for="Region" type="text" class="form-control" autocomplete="off" spellcheck="false" required
-                       minlength="1" maxlength="20" onkeyup="toEnglishNumber(this.value,'Region');">
-                <div class="invalid-feedback">
-                    <span asp-validation-for="Region"></span>
-                </div>
-            </div>
-        </div>
-
         <div class="col-12">
             <label asp-for="Address" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="Address" type="text" class="form-control" required minlength="3" maxlength="100">
                 <div class="invalid-feedback">
                     <span asp-validation-for="Address"></span>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-6">
-            <label asp-for="NationalCode" class="form-label"></label>
-            <div class="input-group has-validation">
-                <input asp-for="NationalCode" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                       required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'NationalCode');">
-                <div class="invalid-feedback">
-                    <span asp-validation-for="NationalCode"></span>
                 </div>
             </div>
         </div>

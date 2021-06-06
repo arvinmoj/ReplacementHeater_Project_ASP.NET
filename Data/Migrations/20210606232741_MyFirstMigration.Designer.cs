@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20210531043654_MyFirstMigration")]
+    [Migration("20210606232741_MyFirstMigration")]
     partial class MyFirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -245,24 +245,24 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("54859f3d-46b9-43ee-a5bc-d9443cdcf850"),
+                            Id = new Guid("f4bedb26-68b5-460f-b6e5-f6405c57e54b"),
                             CityName = "تهران",
                             IdCity = new Guid("16bcbb89-9dcf-4742-82eb-474013215322"),
-                            InsertDateTime = new DateTime(2021, 5, 31, 9, 6, 53, 908, DateTimeKind.Local).AddTicks(1330)
+                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(300)
                         },
                         new
                         {
-                            Id = new Guid("c626b591-8427-43b2-bf8a-6d3343333025"),
+                            Id = new Guid("3e61bef9-ae9e-41f3-8ce3-de74b6b532b0"),
                             CityName = "اصفهان",
                             IdCity = new Guid("a1d501b1-dbb0-478e-8b54-5aea1497bbfb"),
-                            InsertDateTime = new DateTime(2021, 5, 31, 9, 6, 53, 908, DateTimeKind.Local).AddTicks(2660)
+                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(1440)
                         },
                         new
                         {
-                            Id = new Guid("e0c97b98-2d32-4e85-8d6c-7ff013620b5f"),
+                            Id = new Guid("38de17b1-46fe-44a3-b232-343c22625318"),
                             CityName = "كرمان",
                             IdCity = new Guid("5b59b32a-ce68-406a-9eef-1390de1fff51"),
-                            InsertDateTime = new DateTime(2021, 5, 31, 9, 6, 53, 908, DateTimeKind.Local).AddTicks(2690)
+                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(1480)
                         });
                 });
 
@@ -289,10 +289,10 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f64e865c-a77d-4920-adfa-6c26e50f5204"),
+                            Id = new Guid("055e1419-1774-4fd3-b87d-8b5a4dd8cb09"),
                             CountryName = "ایران",
                             IdCountry = new Guid("00bc82fd-6896-4cf2-9180-53b1ed4b2c69"),
-                            InsertDateTime = new DateTime(2021, 5, 31, 9, 6, 53, 901, DateTimeKind.Local).AddTicks(9530)
+                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 877, DateTimeKind.Local).AddTicks(6200)
                         });
                 });
 
@@ -337,8 +337,10 @@ namespace Data.Migrations
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
 
-                    b.Property<int>("UserNumber")
-                        .HasColumnType("int");
+                    b.Property<string>("UserNumber")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.HasKey("Id");
 
@@ -355,6 +357,10 @@ namespace Data.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<string>("Attachment")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("City")
                         .IsRequired()
                         .HasMaxLength(128)
@@ -366,6 +372,7 @@ namespace Data.Migrations
                         .HasColumnType("nvarchar(128)");
 
                     b.Property<float>("EconomicCode")
+                        .HasMaxLength(128)
                         .HasColumnType("real");
 
                     b.Property<string>("EmailAddress")
@@ -373,16 +380,15 @@ namespace Data.Migrations
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
 
-                    b.Property<int>("GasometerNumber")
-                        .HasColumnType("int");
+                    b.Property<string>("GasometerNumber")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("GasometerType")
                         .IsRequired()
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
-
-                    b.Property<string>("ImageName")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("InsertDateTime")
                         .HasColumnType("datetime2");
@@ -408,13 +414,10 @@ namespace Data.Migrations
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
 
-                    b.Property<string>("NationalCode")
+                    b.Property<string>("PersonNumber")
                         .IsRequired()
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
-
-                    b.Property<int>("PersonNumber")
-                        .HasColumnType("int");
 
                     b.Property<string>("PhoneNumber")
                         .IsRequired()
@@ -426,12 +429,8 @@ namespace Data.Migrations
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
 
-                    b.Property<string>("Region")
-                        .IsRequired()
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
-
                     b.Property<float>("RegistrationNumber")
+                        .HasMaxLength(128)
                         .HasColumnType("real");
 
                     b.Property<string>("State")
@@ -461,7 +460,8 @@ namespace Data.Migrations
 
                     b.Property<string>("Attachment")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("City")
                         .IsRequired()
@@ -478,12 +478,15 @@ namespace Data.Migrations
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
 
-                    b.Property<int>("GasometerNumber")
-                        .HasColumnType("int");
+                    b.Property<string>("GasometerNumber")
+                        .IsRequired()
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("GasometerType")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<DateTime>("InsertDateTime")
                         .HasColumnType("datetime2");
@@ -514,15 +517,12 @@ namespace Data.Migrations
                     b.Property<Guid>("NaturalPersonId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("PersonNumber")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PhoneNumber")
+                    b.Property<string>("PersonNumber")
                         .IsRequired()
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
 
-                    b.Property<string>("Region")
+                    b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
@@ -667,23 +667,23 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("443519af-bd61-4bcf-914a-dc6f70adf088"),
-                            IdState = new Guid("914b3ee0-a341-45e9-ac1d-af57e6b908a4"),
-                            InsertDateTime = new DateTime(2021, 5, 31, 9, 6, 53, 908, DateTimeKind.Local).AddTicks(5680),
+                            Id = new Guid("249b42ac-4f6e-4baa-b3c5-a1541a622e43"),
+                            IdState = new Guid("e4e8a327-425a-4704-b364-39deedacd105"),
+                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(4750),
                             StateName = "بم"
                         },
                         new
                         {
-                            Id = new Guid("5b806caa-41b9-448b-adf0-4b1808559796"),
-                            IdState = new Guid("e94e59f6-e7f5-4540-b340-f14934818180"),
-                            InsertDateTime = new DateTime(2021, 5, 31, 9, 6, 53, 908, DateTimeKind.Local).AddTicks(6590),
+                            Id = new Guid("5a8c35d3-9d8a-4f1d-80b4-3a8cbf959521"),
+                            IdState = new Guid("4f1a0fad-9bea-4a56-8c9c-81a19d8f52b3"),
+                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(5850),
                             StateName = "ايمانشهر"
                         },
                         new
                         {
-                            Id = new Guid("47e7b497-c3bf-46f8-bcc4-23963366b45d"),
-                            IdState = new Guid("b060ab53-1f9b-44c9-92bc-8a324ae6c1b5"),
-                            InsertDateTime = new DateTime(2021, 5, 31, 9, 6, 53, 908, DateTimeKind.Local).AddTicks(6620),
+                            Id = new Guid("c9c26268-0c4e-4444-84a0-b6d3ca8e35ea"),
+                            IdState = new Guid("55d84303-1f28-46e5-81f5-66c9a6c75776"),
+                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(5900),
                             StateName = "البرز"
                         });
                 });

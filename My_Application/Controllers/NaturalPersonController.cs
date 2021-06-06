@@ -57,7 +57,7 @@ namespace My_Application.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("NaturalPersonId,InstallerUserName,FullName,NationalCode,EmailAddress,PhoneNumber,MobileNumber,City,State,Region,Address,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] NaturalPerson naturalPerson)
+        public async Task<IActionResult> Create([Bind("NaturalPersonId,InstallerUserName,FullName,NationalCode,EmailAddress,PhoneNumber,MobileNumber,City,State,Address,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] NaturalPerson naturalPerson)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace My_Application.Controllers
             return View(naturalPerson);
         }
 
-        public async Task<IActionResult> AddHeater([Bind("NaturalPersonId,InstallerUserName,FullName,NationalCode,EmailAddress,PhoneNumber,MobileNumber,City,State,Region,Address,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] NaturalPerson naturalPerson)
+        public async Task<IActionResult> AddHeater([Bind("NaturalPersonId,InstallerUserName,FullName,NationalCode,EmailAddress,PhoneNumber,MobileNumber,City,State,Address,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] NaturalPerson naturalPerson)
         {
 
             if (ModelState.IsValid)
@@ -123,7 +123,7 @@ namespace My_Application.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,InstallerUserName,FullName,NationalCode,EmailAddress,PhoneNumber,MobileNumber,City,State,Region,Address,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] NaturalPerson naturalPerson)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,InstallerUserName,FullName,NationalCode,EmailAddress,PhoneNumber,MobileNumber,City,State,Address,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] NaturalPerson naturalPerson)
         {
             if (id != naturalPerson.Id)
             {
