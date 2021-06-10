@@ -62,7 +62,8 @@
             <label asp-for="PhoneNumber" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="PhoneNumber" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="11" maxlength="11" pattern="\d*" onkeyup="toEnglishNumber(this.value,'PhoneNumber');">
+                    required minlength="11" maxlength="11" pattern="\d*"
+                    onkeyup="toEnglishNumber(this.value,'PhoneNumber');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="PhoneNumber"></span>
                 </div>
@@ -121,7 +122,8 @@
             <label asp-for="EconomicCode" class="form-label"></label>
             <div class="input-group has-validation">
                 <input asp-for="EconomicCode" type="text" class="form-control" autocomplete="off" spellcheck="false"
-                    required minlength="5" maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'EconomicCode');">
+                    required minlength="5" maxlength="20" pattern="\d*"
+                    onkeyup="toEnglishNumber(this.value,'EconomicCode');">
                 <div class="invalid-feedback">
                     <span asp-validation-for="EconomicCode"></span>
                 </div>
@@ -156,14 +158,11 @@
                 <select asp-for="GasometerType" type="text" class="js-example-basic-single form-select"
                     autocomplete="off" spellcheck="false" required>
                     <option value=""></option>
-                    <option value="کنتور گاز دیافراگمی G4">
-                        کنتور گاز دیافراگمی G4
+                    <option value="مستقل">
+                        مستقل
                     </option>
-                    <option value="کنتور هوشمند گاز">
-                        کنتور هوشمند گاز
-                    </option>
-                    <option value="کنتور گاز آلتراسونیک">
-                        کنتور گاز آلتراسونیک
+                    <option value="اشتراکی">
+                        اشتراکی
                     </option>
                 </select>
                 <div class="invalid-feedback">

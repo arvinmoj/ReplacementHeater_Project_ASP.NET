@@ -26,7 +26,7 @@ namespace Validator
             // *****
             RuleFor(c => c.UserNumber)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
+                .MinimumLength(5).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
                 .MaximumLength(20).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
             // *****
 
@@ -54,7 +54,7 @@ namespace Validator
             // *****
             RuleFor(c => c.Address)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
-                .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
+                .MinimumLength(10).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
                 .MaximumLength(100).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
             // *****
 
