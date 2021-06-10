@@ -2,6 +2,8 @@
 using System;
 using Models;
 using System.Threading.Tasks;
+using ViewModels.LegalPerson;
+using ViewModels.NaturalPerson;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
@@ -58,7 +60,7 @@ namespace My_Application.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("LegalPersonId,InstallerUserName,CompanyName,NameCEO,EmailAddress,PhoneNumber,City,State,Address,RegistrationNumber,EconomicCode,RecipientName,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] LegalPerson legalPerson)
+        public async Task<IActionResult> Create([Bind("LegalPersonId,InstallerUserName,CompanyName,NameCEO,EmailAddress,PhoneNumber,City,State,Address,PostalCode,RegistrationNumber,EconomicCode,RecipientName,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] LegalPerson legalPerson)
         {
             if (ModelState.IsValid)
             {
@@ -80,7 +82,7 @@ namespace My_Application.Controllers
             return View(legalPerson);
         }
 
-        public async Task<IActionResult> AddHeater([Bind("LegalPersonId,InstallerUserName,CompanyName,NameCEO,EmailAddress,PhoneNumber,City,State,Address,RegistrationNumber,EconomicCode,RecipientName,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] LegalPerson legalPerson)
+        public async Task<IActionResult> AddHeater([Bind("LegalPersonId,InstallerUserName,CompanyName,NameCEO,EmailAddress,PhoneNumber,City,State,Address,PostalCode,RegistrationNumber,EconomicCode,RecipientName,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] LegalPerson legalPerson)
         {
 
             if (ModelState.IsValid)
@@ -125,7 +127,7 @@ namespace My_Application.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,InstallerUserName,CompanyName,NameCEO,EmailAddress,PhoneNumber,City,State,Address,RegistrationNumber,EconomicCode,RecipientName,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] LegalPerson legalPerson)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,InstallerUserName,CompanyName,NameCEO,EmailAddress,PhoneNumber,City,State,Address,PostalCode,RegistrationNumber,EconomicCode,RecipientName,InstallationLocation,GasometerType,GasometerNumber,PersonNumber,Attachment")] LegalPerson legalPerson)
         {
             if (id != legalPerson.Id)
             {

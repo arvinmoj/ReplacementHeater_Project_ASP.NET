@@ -13,6 +13,9 @@ using Microsoft.AspNetCore.Identity;
 using Data;
 using Microsoft.EntityFrameworkCore;
 
+using ViewModels.LegalPerson;
+using ViewModels.NaturalPerson;
+
 namespace My_Application
 {
     public class Startup
@@ -33,8 +36,8 @@ namespace My_Application
 
             #region Fluent Validation
             services.AddTransient<IValidator<Installer>, InstallerValidation>();
-            services.AddTransient<IValidator<LegalPerson>, LegalPersonValidation>();
-            services.AddTransient<IValidator<NaturalPerson>, NaturalPersonValidation>();
+            services.AddTransient<IValidator<LegalPersonViewModel>, LegalPersonValidation>();
+            services.AddTransient<IValidator<NaturalPersonViewModel>, NaturalPersonValidation>();
             services.AddTransient<IValidator<ReplacementHeater>, ReplacementHeaterValidation>();
             #endregion
 

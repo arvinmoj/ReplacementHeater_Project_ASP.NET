@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    [Migration("20210606232741_MyFirstMigration")]
+    [Migration("20210610184438_MyFirstMigration")]
     partial class MyFirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -245,24 +245,24 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f4bedb26-68b5-460f-b6e5-f6405c57e54b"),
+                            Id = new Guid("bf26d1fb-5bb7-4be5-9f1a-7f9e13612115"),
                             CityName = "تهران",
                             IdCity = new Guid("16bcbb89-9dcf-4742-82eb-474013215322"),
-                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(300)
+                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(440)
                         },
                         new
                         {
-                            Id = new Guid("3e61bef9-ae9e-41f3-8ce3-de74b6b532b0"),
+                            Id = new Guid("30356d4d-3ccc-42c1-b6fa-2db9f0982644"),
                             CityName = "اصفهان",
                             IdCity = new Guid("a1d501b1-dbb0-478e-8b54-5aea1497bbfb"),
-                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(1440)
+                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(1430)
                         },
                         new
                         {
-                            Id = new Guid("38de17b1-46fe-44a3-b232-343c22625318"),
+                            Id = new Guid("fed34815-f8ed-4c58-97bc-7ff4191f6041"),
                             CityName = "كرمان",
                             IdCity = new Guid("5b59b32a-ce68-406a-9eef-1390de1fff51"),
-                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(1480)
+                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(1560)
                         });
                 });
 
@@ -289,10 +289,10 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("055e1419-1774-4fd3-b87d-8b5a4dd8cb09"),
+                            Id = new Guid("256d207c-459d-49cd-ad9a-1eb0fd1e5879"),
                             CountryName = "ایران",
                             IdCountry = new Guid("00bc82fd-6896-4cf2-9180-53b1ed4b2c69"),
-                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 877, DateTimeKind.Local).AddTicks(6200)
+                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 724, DateTimeKind.Local).AddTicks(8170)
                         });
                 });
 
@@ -424,6 +424,11 @@ namespace Data.Migrations
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
 
+                    b.Property<string>("PostalCode")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
                     b.Property<string>("RecipientName")
                         .IsRequired()
                         .HasMaxLength(128)
@@ -526,6 +531,11 @@ namespace Data.Migrations
                         .IsRequired()
                         .HasMaxLength(128)
                         .HasColumnType("nvarchar(128)");
+
+                    b.Property<string>("PostalCode")
+                        .IsRequired()
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
 
                     b.Property<string>("State")
                         .IsRequired()
@@ -667,23 +677,23 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("249b42ac-4f6e-4baa-b3c5-a1541a622e43"),
-                            IdState = new Guid("e4e8a327-425a-4704-b364-39deedacd105"),
-                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(4750),
+                            Id = new Guid("c3682821-16e3-4371-b00a-698495a00fbc"),
+                            IdState = new Guid("597fcc5d-089b-40b2-9acb-f53d49275718"),
+                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(4240),
                             StateName = "بم"
                         },
                         new
                         {
-                            Id = new Guid("5a8c35d3-9d8a-4f1d-80b4-3a8cbf959521"),
-                            IdState = new Guid("4f1a0fad-9bea-4a56-8c9c-81a19d8f52b3"),
-                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(5850),
+                            Id = new Guid("26be0505-3e7f-482a-bb55-d70224894264"),
+                            IdState = new Guid("86b7d42b-4518-4b77-a261-a5f39bb55ebc"),
+                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(5170),
                             StateName = "ايمانشهر"
                         },
                         new
                         {
-                            Id = new Guid("c9c26268-0c4e-4444-84a0-b6d3ca8e35ea"),
-                            IdState = new Guid("55d84303-1f28-46e5-81f5-66c9a6c75776"),
-                            InsertDateTime = new DateTime(2021, 6, 7, 3, 57, 40, 887, DateTimeKind.Local).AddTicks(5900),
+                            Id = new Guid("9f9400ca-8708-46b0-ad35-c9db9dd77ed7"),
+                            IdState = new Guid("b3161d5a-9416-4820-a1c6-a3f6d44c7036"),
+                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(5200),
                             StateName = "البرز"
                         });
                 });

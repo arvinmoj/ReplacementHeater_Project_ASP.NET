@@ -82,6 +82,13 @@ namespace Data.FluentConfigs
 
             // *****
             builder
+           .Property(s => s.PostalCode)
+           .IsRequired()
+           .HasMaxLength(256);
+            // *****
+
+            // *****
+            builder
            .Property(s => s.InstallationLocation)
            .IsRequired()
            .HasMaxLength(128);

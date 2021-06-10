@@ -8,150 +8,203 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Resources {
+namespace Resources
+{
     using System;
     using System.Reflection;
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class NaturalPersons {
-        
+    public class NaturalPersons
+    {
+
         private static System.Resources.ResourceManager resourceMan;
-        
+
         private static System.Globalization.CultureInfo resourceCulture;
-        
+
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal NaturalPersons() {
+        internal NaturalPersons()
+        {
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.Equals(null, resourceMan)) {
+        public static System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.Equals(null, resourceMan))
+                {
                     System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Resources.NaturalPersons", typeof(NaturalPersons).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public static System.Globalization.CultureInfo Culture {
-            get {
+        public static System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-        
-        public static string FullName {
-            get {
+
+        public static string FullName
+        {
+            get
+            {
                 return ResourceManager.GetString("FullName", resourceCulture);
             }
         }
-        
-        public static string NationalCode {
-            get {
+
+        public static string NationalCode
+        {
+            get
+            {
                 return ResourceManager.GetString("NationalCode", resourceCulture);
             }
         }
-        
-        public static string PhoneNumber {
-            get {
+
+        public static string PhoneNumber
+        {
+            get
+            {
                 return ResourceManager.GetString("PhoneNumber", resourceCulture);
             }
         }
-        
-        public static string MobileNumber {
-            get {
+
+        public static string MobileNumber
+        {
+            get
+            {
                 return ResourceManager.GetString("MobileNumber", resourceCulture);
             }
         }
-        
-        public static string State {
-            get {
+
+        public static string State
+        {
+            get
+            {
                 return ResourceManager.GetString("State", resourceCulture);
             }
         }
-        
-        public static string City {
-            get {
+
+        public static string City
+        {
+            get
+            {
                 return ResourceManager.GetString("City", resourceCulture);
             }
         }
-        
-        public static string Region {
-            get {
+
+        public static string Region
+        {
+            get
+            {
                 return ResourceManager.GetString("Region", resourceCulture);
             }
         }
-        
-        public static string Street {
-            get {
+
+        public static string Street
+        {
+            get
+            {
                 return ResourceManager.GetString("Street", resourceCulture);
             }
         }
-        
-        public static string Plaque {
-            get {
+
+        public static string Plaque
+        {
+            get
+            {
                 return ResourceManager.GetString("Plaque", resourceCulture);
             }
         }
-        
-        public static string Floor {
-            get {
+
+        public static string Floor
+        {
+            get
+            {
                 return ResourceManager.GetString("Floor", resourceCulture);
             }
         }
-        
-        public static string InstallationLocation {
-            get {
+
+        public static string InstallationLocation
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallationLocation", resourceCulture);
             }
         }
-        
-        public static string GasometerType {
-            get {
+
+        public static string GasometerType
+        {
+            get
+            {
                 return ResourceManager.GetString("GasometerType", resourceCulture);
             }
         }
-        
-        public static string GasometerNumber {
-            get {
+
+        public static string GasometerNumber
+        {
+            get
+            {
                 return ResourceManager.GetString("GasometerNumber", resourceCulture);
             }
         }
-        
-        public static string PersonNumber {
-            get {
+
+        public static string PersonNumber
+        {
+            get
+            {
                 return ResourceManager.GetString("PersonNumber", resourceCulture);
             }
         }
-        
-        public static string EmailAddress {
-            get {
+
+        public static string EmailAddress
+        {
+            get
+            {
                 return ResourceManager.GetString("EmailAddress", resourceCulture);
             }
         }
-        
-        public static string Attachment {
-            get {
+
+        public static string Attachment
+        {
+            get
+            {
                 return ResourceManager.GetString("Attachment", resourceCulture);
             }
         }
-        
-        public static string InstallerUserName {
-            get {
+
+        public static string InstallerUserName
+        {
+            get
+            {
                 return ResourceManager.GetString("InstallerUserName", resourceCulture);
             }
         }
-        
-        public static string Address {
-            get {
+
+        public static string Address
+        {
+            get
+            {
                 return ResourceManager.GetString("Address", resourceCulture);
+            }
+        }
+
+        public static string PostalCode
+        {
+            get
+            {
+                return ResourceManager.GetString("PostalCode", resourceCulture);
             }
         }
     }

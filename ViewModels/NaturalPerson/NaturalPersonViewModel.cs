@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Models
+namespace ViewModels.NaturalPerson
 {
-    [Table("NaturalPerson")]
-    public class NaturalPerson : Base.Entity
+    public class NaturalPersonViewModel
     {
-        public NaturalPerson() : base()
+
+        public NaturalPersonViewModel() : base()
         {
-            NaturalPersonId = Guid.NewGuid();
         }
-
-        // *****
-        public Guid NaturalPersonId { get; set; }
-        // *****
-
+        
         // *****
         [Display(ResourceType = typeof(Resources.ReplacementHeater),
          Name = nameof(Resources.ReplacementHeater.UserNaturalPerson))]
@@ -49,12 +41,14 @@ namespace Models
         // *****
 
         // *****
+        [Phone]
         [Display(ResourceType = typeof(Resources.NaturalPersons),
            Name = nameof(Resources.NaturalPersons.PhoneNumber))]
         public string PhoneNumber { get; set; }
         // *****
 
         // *****
+        [Phone]
         [Display(ResourceType = typeof(Resources.NaturalPersons),
            Name = nameof(Resources.NaturalPersons.MobileNumber))]
         public string MobileNumber { get; set; }
@@ -77,7 +71,7 @@ namespace Models
            Name = nameof(Resources.NaturalPersons.Address))]
         public string Address { get; set; }
         // *****
-
+        
         // *****
         [Display(ResourceType = typeof(Resources.NaturalPersons),
            Name = nameof(Resources.NaturalPersons.PostalCode))]
@@ -113,9 +107,5 @@ namespace Models
             Name = nameof(Resources.LegalPerson.Attachment))]
         public string Attachment { get; set; }
         // *****
-
-        public Installer Installer { get; set; }
-
-        public List<ReplacementHeater> ReplacementHeaters { get; set; }
     }
 }

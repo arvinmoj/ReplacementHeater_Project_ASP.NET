@@ -42,14 +42,12 @@ namespace Models
         // *****
 
         // *****
-        [Phone]
         [Display(ResourceType = typeof(Resources.Installer),
            Name = nameof(Resources.Installer.PhoneNumber))]
         public string PhoneNumber { get; set; }
         // *****
 
         // *****
-        [Phone]
         [Display(ResourceType = typeof(Resources.Installer),
            Name = nameof(Resources.Installer.MobileNumber))]
         public string MobileNumber { get; set; }

@@ -73,6 +73,14 @@ namespace Data.FluentConfigs
            .HasMaxLength(256);
             // *****
 
+
+            // *****
+            builder
+           .Property(s => s.PostalCode)
+           .IsRequired()
+           .HasMaxLength(256);
+            // *****
+
             // *****
             builder
             .Property(s => s.RegistrationNumber)

@@ -189,4 +189,8 @@
     <value>آدرس</value>
     <comment/>
   </data>
+  <data name="PostalCode" xml:space="preserve">
+    <value>کد پستی </value>
+    <comment/>
+  </data>
 </root>

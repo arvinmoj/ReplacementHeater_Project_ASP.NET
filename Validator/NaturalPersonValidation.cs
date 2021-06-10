@@ -1,10 +1,10 @@
-﻿using Models;
+﻿using ViewModels.NaturalPerson;
 using System;
 using FluentValidation;
 
 namespace Validator
 {
-    public class NaturalPersonValidation : AbstractValidator<NaturalPerson>
+    public class NaturalPersonValidation : AbstractValidator<NaturalPersonViewModel>
     {
         [Obsolete]
         public NaturalPersonValidation()
@@ -64,6 +64,12 @@ namespace Validator
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
                 .MinimumLength(10).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
                 .MaximumLength(100).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+            // *****
+
+            // *****
+            RuleFor(c => c.PostalCode)
+                .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
+                .NotEmpty();
             // *****
 
             // *****

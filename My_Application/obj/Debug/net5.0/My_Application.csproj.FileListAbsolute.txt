@@ -591,14 +591,14 @@
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/ref/My_Application.dll
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/My_Application.pdb
 /Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/My_Application/obj/Debug/net5.0/My_Application.genruntimeconfig.cache
+/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/XUnitTestProject.deps.json
+/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/XUnitTestProject.runtimeconfig.json
+/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/XUnitTestProject.runtimeconfig.dev.json
 /Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
 /Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/xunit.runner.reporters.netcoreapp10.dll
 /Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/xunit.runner.utility.netcoreapp10.dll
 /Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/appsettings.Development.json
 /Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/appsettings.json
-/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/XUnitTestProject.deps.json
-/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/XUnitTestProject.runtimeconfig.json
-/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/XUnitTestProject.runtimeconfig.dev.json
 /Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/My_Application.deps.json
 /Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/My_Application.runtimeconfig.json
 /Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/My_Application/bin/Debug/net5.0/My_Application.runtimeconfig.dev.json

@@ -1,16 +1,15 @@
 ﻿using System;
 using FluentValidation;
-using Models;
+using ViewModels.LegalPerson;
 
 namespace Validator
 {
-    public class LegalPersonValidation : AbstractValidator<LegalPerson>
+    public class LegalPersonValidation : AbstractValidator<LegalPersonViewModel>
     {
         [Obsolete]
         public LegalPersonValidation()
         {
-
-
+            
             // *****
             RuleFor(c => c.InstallerUserName)
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
@@ -67,6 +66,12 @@ namespace Validator
                 .NotEmpty()
                 .MinimumLength(10).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
                 .MaximumLength(100).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+            // *****
+
+            // *****
+            RuleFor(c => c.PostalCode)
+                .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
+                .NotEmpty();
             // *****
 
             // *****

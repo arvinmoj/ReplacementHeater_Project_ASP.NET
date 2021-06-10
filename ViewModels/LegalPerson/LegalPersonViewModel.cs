@@ -1,21 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Models
+namespace ViewModels.LegalPerson
 {
-    [Table("LegalPerson")]
-    public class LegalPerson : Base.Entity
+    public class LegalPersonViewModel
     {
-        public LegalPerson() : base()
+        public LegalPersonViewModel() : base()
         {
-            LegalPersonId = Guid.NewGuid();
         }
-
-        // *****
-        public Guid LegalPersonId { get; set; }
-        // *****
 
         // *****
         [Display(ResourceType = typeof(Resources.ReplacementHeater),
@@ -76,7 +67,7 @@ namespace Models
           Name = nameof(Resources.LegalPerson.PostalCode))]
         public string PostalCode { get; set; }
         // *****
-
+        
         // *****
         [Display(ResourceType = typeof(Resources.LegalPerson),
           Name = nameof(Resources.LegalPerson.RegistrationNumber))]
@@ -124,9 +115,5 @@ namespace Models
          Name = nameof(Resources.LegalPerson.Attachment))]
         public string Attachment { get; set; }
         // *****
-
-        public Installer Installer { get; set; }
-
-        public List<ReplacementHeater> ReplacementHeaters { get; set; }
     }
 }

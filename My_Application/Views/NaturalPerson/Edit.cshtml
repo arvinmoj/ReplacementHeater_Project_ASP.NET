@@ -1,5 +1,4 @@
-﻿@model Models.NaturalPerson
-
+﻿@model ViewModels.NaturalPerson.NaturalPersonViewModel;
 @{
     Layout = "_CreateLayout";
     ViewData["Title"] = "تغییرات";
@@ -13,7 +12,7 @@
     <div class="row g-3">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        <input type="hidden" asp-for="NaturalPersonId" />
+        @* <input type="hidden" asp-for="NaturalPersonId" /> *@
 
         <div class="col-6">
             <label asp-for="InstallerUserName" class="form-label"></label>
@@ -119,6 +118,17 @@
                     minlength="10" maxlength="100">
                 <div class="invalid-feedback">
                     <span asp-validation-for="Address"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <label asp-for="PostalCode" class="form-label"></label>
+            <div class="input-group has-validation">
+                <input asp-for="PostalCode" type="text" class="form-control" autocomplete="off" spellcheck="false"
+                    required maxlength="20" pattern="\d*" onkeyup="toEnglishNumber(this.value,'PostalCode');">
+                <div class="invalid-feedback">
+                    <span asp-validation-for="PostalCode"></span>
                 </div>
             </div>
         </div>
