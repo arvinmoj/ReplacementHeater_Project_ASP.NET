@@ -18,9 +18,10 @@ namespace Service.Email.Account
                 // NetworkCredential
                 var credentials = new NetworkCredential()
                 {
-                    // Enter email and password without ex: @gmail.com
+                    // Enter email and password without ex: @Hotmail.com
                     UserName = "arvinmojaverian@hotmail.com",
-                    Password = "Arvinmoj!1q2w3e!",
+                    // Enter Password 
+                    Password = "",
                 };
 
                 client.Credentials = credentials;
