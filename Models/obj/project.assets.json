@@ -915,11 +915,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Models/Models.csproj",
+      "projectUniqueName": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Models/Models.csproj",
       "projectName": "Models",
-      "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Models/Models.csproj",
+      "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Models/Models.csproj",
       "packagesPath": "/Users/macbook/.nuget/packages/",
-      "outputPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Models/obj/",
+      "outputPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Models/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -937,8 +937,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj": {
-              "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj"
+            "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj": {
+              "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj"
             }
           }
         }

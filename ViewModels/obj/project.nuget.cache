@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "maWkL/iuFYHbl4k2x7tljDIerUJ9gVXxRiV62dReqS+NEJYBOqonku1p3keK+l4Zjou1CZFxcWSqpVVqgnIbHQ==",
+  "dgSpecHash": "Y3hK8i9z04AgwJvsncRojy5JMnssa7vn23IS0XaOMKpPbwNC+U6B/nMMS5VZnp9lPucIthPM/HoJVYpCNcOidw==",
   "success": true,
-  "projectFilePath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj",
+  "projectFilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj",
   "expectedPackageFiles": [
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.antiforgery/2.2.0/microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

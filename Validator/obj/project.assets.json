@@ -7949,11 +7949,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Validator/Validator.csproj",
+      "projectUniqueName": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Validator/Validator.csproj",
       "projectName": "Validator",
-      "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Validator/Validator.csproj",
+      "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Validator/Validator.csproj",
       "packagesPath": "/Users/macbook/.nuget/packages/",
-      "outputPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Validator/obj/",
+      "outputPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Validator/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -7971,8 +7971,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj": {
-              "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj"
+            "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj": {
+              "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj"
             }
           }
         }

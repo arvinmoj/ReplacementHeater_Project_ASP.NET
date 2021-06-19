@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n6nCcKHjE9/Liwn8QCE7nyECyiMcwIzu9T0mMDwduXEv4dfL0SrtBr44VgT0CDZPBTR7jS00XN/qTctq9R/Nfg==",
+  "dgSpecHash": "S5J8cBVLWLDKdfUj/ebxlklwjM/rWNQuXCWFqCEFIZbmKnV4/ec/2epTpypHtdJ0NfXBApgaSd+V4vdh8cfmqg==",
   "success": true,
-  "projectFilePath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj",
+  "projectFilePath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj",
   "expectedPackageFiles": [
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/Users/macbook/.nuget/packages/microsoft.aspnetcore.authentication.core/2.2.0/microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

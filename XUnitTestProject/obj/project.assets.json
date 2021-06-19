@@ -10806,11 +10806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/XUnitTestProject/XUnitTestProject.csproj",
+      "projectUniqueName": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/XUnitTestProject/XUnitTestProject.csproj",
       "projectName": "XUnitTestProject",
-      "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/XUnitTestProject/XUnitTestProject.csproj",
+      "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/XUnitTestProject/XUnitTestProject.csproj",
       "packagesPath": "/Users/macbook/.nuget/packages/",
-      "outputPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/XUnitTestProject/obj/",
+      "outputPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/XUnitTestProject/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -10828,20 +10828,20 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Data/Data.csproj": {
-              "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Data/Data.csproj"
+            "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Data/Data.csproj": {
+              "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Data/Data.csproj"
             },
-            "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Models/Models.csproj": {
-              "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Models/Models.csproj"
+            "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Models/Models.csproj": {
+              "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Models/Models.csproj"
             },
-            "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj": {
-              "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj"
+            "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj": {
+              "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj"
             },
-            "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj": {
-              "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj"
+            "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj": {
+              "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj"
             },
-            "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj": {
-              "projectPath": "/Users/macbook/Documents/GitHub/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj"
+            "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj": {
+              "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/ViewModels/ViewModels.csproj"
             }
           }
         }
