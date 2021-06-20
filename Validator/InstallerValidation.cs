@@ -4,7 +4,7 @@ using FluentValidation;
 
 namespace Validator
 {
-    public class InstallerValidation : AbstractValidator<Installer>
+    public class InstallerValidation : AbstractValidator<ViewModels.Installer.InstallerViewModel>
     {
         [Obsolete]
         public InstallerValidation()

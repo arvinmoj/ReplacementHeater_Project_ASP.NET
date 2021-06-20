@@ -4,7 +4,7 @@ using FluentValidation;
 
 namespace Validator
 {
-    public class ReplacementHeaterValidation : AbstractValidator<ReplacementHeater>
+    public class ReplacementHeaterValidation : AbstractValidator<ViewModels.ReplacementHeater.ReplacementHeaterViewModel>
     {
         [Obsolete]
         public ReplacementHeaterValidation()

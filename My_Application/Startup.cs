@@ -1,5 +1,4 @@
 using Data;
-using Models;
 using System;
 using Validator;
 using FluentValidation;
@@ -7,6 +6,7 @@ using Service.Email.Account;
 using ViewModels.LegalPerson;
 using ViewModels.NaturalPerson;
 using FluentValidation.AspNetCore;
+using ViewModels.ReplacementHeater;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
@@ -34,10 +34,10 @@ namespace My_Application
                .AddFluentValidation();
 
             #region Fluent Validation
-            services.AddTransient<IValidator<Installer>, InstallerValidation>();
             services.AddTransient<IValidator<LegalPersonViewModel>, LegalPersonValidation>();
             services.AddTransient<IValidator<NaturalPersonViewModel>, NaturalPersonValidation>();
-            services.AddTransient<IValidator<ReplacementHeater>, ReplacementHeaterValidation>();
+            services.AddTransient<IValidator<ReplacementHeaterViewModel>, ReplacementHeaterValidation>();
+            services.AddTransient<IValidator<ViewModels.Installer.InstallerViewModel>, InstallerValidation>();
             #endregion
 
             services.AddTransient<Data.IUnitOfWork, Data.UnitOfWork>(sp =>

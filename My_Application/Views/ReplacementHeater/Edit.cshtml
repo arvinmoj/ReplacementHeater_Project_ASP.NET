@@ -1,4 +1,4 @@
-﻿@model Models.ReplacementHeater
+﻿@model ViewModels.ReplacementHeater.ReplacementHeaterViewModel
 
 @{
     Layout = "_CreateLayout";
@@ -13,7 +13,7 @@
     <div class="row g-3">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        <input type="hidden" asp-for="ReplacementHeaterId" />
+        @* <input type="hidden" asp-for="ReplacementHeaterId" /> *@
 
         <div class="col-6">
             <label asp-for="HeaterInstalledType" class="form-label"></label>

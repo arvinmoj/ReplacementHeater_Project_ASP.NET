@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj": {}
+    "/Users/macbook/Documents/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj": {}
   },
   "projects": {
-    "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj": {
+    "/Users/macbook/Documents/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj",
+        "projectUniqueName": "/Users/macbook/Documents/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj",
         "projectName": "Resources",
-        "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj",
+        "projectPath": "/Users/macbook/Documents/Desktop/ReplacementHeater_Project_ASP.NET/Resources/Resources.csproj",
         "packagesPath": "/Users/macbook/.nuget/packages/",
-        "outputPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Resources/obj/",
+        "outputPath": "/Users/macbook/Documents/Desktop/ReplacementHeater_Project_ASP.NET/Resources/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

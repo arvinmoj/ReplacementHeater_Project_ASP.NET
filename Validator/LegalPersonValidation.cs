@@ -37,7 +37,8 @@ namespace Validator
                 .NotNull().WithMessage(errorMessage: nameof(Resources.ErrorMessages.Required))
                 .NotEmpty()
                 .MinimumLength(3).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MinLength))
-                .MaximumLength(60).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength));
+                .MaximumLength(60).WithMessage(errorMessage: nameof(Resources.ErrorMessages.MaxLength))
+                .EmailAddress().WithMessage(errorMessage: nameof(Resources.ErrorMessages.InvalidEmailAddress));
             // *****
 
             // *****

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj": {}
+    "/Users/macbook/Documents/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj": {}
   },
   "projects": {
-    "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj": {
+    "/Users/macbook/Documents/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj",
+        "projectUniqueName": "/Users/macbook/Documents/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj",
         "projectName": "Moj",
-        "projectPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj",
+        "projectPath": "/Users/macbook/Documents/Desktop/ReplacementHeater_Project_ASP.NET/Moj/Moj.csproj",
         "packagesPath": "/Users/macbook/.nuget/packages/",
-        "outputPath": "/Users/macbook/Desktop/ReplacementHeater_Project_ASP.NET/Moj/obj/",
+        "outputPath": "/Users/macbook/Documents/Desktop/ReplacementHeater_Project_ASP.NET/Moj/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

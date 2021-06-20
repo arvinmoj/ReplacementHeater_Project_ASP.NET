@@ -1,4 +1,4 @@
-﻿@model Models.Installer
+﻿@model ViewModels.Installer.InstallerViewModel
 
 @{
     Layout = "_CreateLayout";
@@ -11,7 +11,7 @@
     <div class="row g-3">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-        <input type="hidden" asp-for="InstallerId" />
+        @* <input type="hidden" asp-for="InstallerId" /> *@
 
         <div class="col-6">
             <label asp-for="FullName" class="form-label"></label>

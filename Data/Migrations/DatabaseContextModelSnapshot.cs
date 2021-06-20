@@ -243,24 +243,24 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("bf26d1fb-5bb7-4be5-9f1a-7f9e13612115"),
+                            Id = new Guid("21582bb5-7873-49b1-8401-fcd3caf32914"),
                             CityName = "تهران",
                             IdCity = new Guid("16bcbb89-9dcf-4742-82eb-474013215322"),
-                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(440)
+                            InsertDateTime = new DateTime(2021, 6, 20, 10, 0, 5, 637, DateTimeKind.Local).AddTicks(1130)
                         },
                         new
                         {
-                            Id = new Guid("30356d4d-3ccc-42c1-b6fa-2db9f0982644"),
+                            Id = new Guid("64dca989-e358-4cc5-9326-f1c3a48ee89e"),
                             CityName = "اصفهان",
                             IdCity = new Guid("a1d501b1-dbb0-478e-8b54-5aea1497bbfb"),
-                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(1430)
+                            InsertDateTime = new DateTime(2021, 6, 20, 10, 0, 5, 637, DateTimeKind.Local).AddTicks(2500)
                         },
                         new
                         {
-                            Id = new Guid("fed34815-f8ed-4c58-97bc-7ff4191f6041"),
+                            Id = new Guid("4bfec858-cc50-4837-b432-0ff352f43fdf"),
                             CityName = "كرمان",
                             IdCity = new Guid("5b59b32a-ce68-406a-9eef-1390de1fff51"),
-                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(1560)
+                            InsertDateTime = new DateTime(2021, 6, 20, 10, 0, 5, 637, DateTimeKind.Local).AddTicks(2540)
                         });
                 });
 
@@ -287,10 +287,10 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("256d207c-459d-49cd-ad9a-1eb0fd1e5879"),
+                            Id = new Guid("6f07adab-50d6-413f-9fe5-2938affe5624"),
                             CountryName = "ایران",
                             IdCountry = new Guid("00bc82fd-6896-4cf2-9180-53b1ed4b2c69"),
-                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 724, DateTimeKind.Local).AddTicks(8170)
+                            InsertDateTime = new DateTime(2021, 6, 20, 10, 0, 5, 629, DateTimeKind.Local).AddTicks(3520)
                         });
                 });
 
@@ -675,23 +675,23 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("c3682821-16e3-4371-b00a-698495a00fbc"),
-                            IdState = new Guid("597fcc5d-089b-40b2-9acb-f53d49275718"),
-                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(4240),
+                            Id = new Guid("f278996c-7d70-4cb9-8715-46b7dd9adc4c"),
+                            IdState = new Guid("f1ee2853-a064-4621-ac54-891ab9e323c9"),
+                            InsertDateTime = new DateTime(2021, 6, 20, 10, 0, 5, 637, DateTimeKind.Local).AddTicks(6190),
                             StateName = "بم"
                         },
                         new
                         {
-                            Id = new Guid("26be0505-3e7f-482a-bb55-d70224894264"),
-                            IdState = new Guid("86b7d42b-4518-4b77-a261-a5f39bb55ebc"),
-                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(5170),
+                            Id = new Guid("9f04d8af-b7c2-457f-9bcd-b63bd5722339"),
+                            IdState = new Guid("486c575d-b834-4195-baf6-f9ff84026829"),
+                            InsertDateTime = new DateTime(2021, 6, 20, 10, 0, 5, 637, DateTimeKind.Local).AddTicks(7650),
                             StateName = "ايمانشهر"
                         },
                         new
                         {
-                            Id = new Guid("9f9400ca-8708-46b0-ad35-c9db9dd77ed7"),
-                            IdState = new Guid("b3161d5a-9416-4820-a1c6-a3f6d44c7036"),
-                            InsertDateTime = new DateTime(2021, 6, 10, 23, 14, 37, 731, DateTimeKind.Local).AddTicks(5200),
+                            Id = new Guid("f458cec2-697e-4e07-b6ca-6a60f2feac9d"),
+                            IdState = new Guid("61116603-0348-4a8d-8c04-dd0599c5d549"),
+                            InsertDateTime = new DateTime(2021, 6, 20, 10, 0, 5, 637, DateTimeKind.Local).AddTicks(7700),
                             StateName = "البرز"
                         });
                 });
